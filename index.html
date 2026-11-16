@@ -264,14 +264,8 @@
           </div>
         </div>
 
-        <!-- Ô TRA CỨU NHANH & NÚT SỬA TRỰC TIẾP ĐỀ MỤC NGAY TRÊN TRANG -->
-        <div class="flex flex-wrap items-center gap-2.5 w-full lg:w-auto">
-          <button type="button" id="btnToggleLiveEdit" onclick="toggleLiveInlineEditMode()"
-            class="bg-amber-400 hover:bg-amber-300 text-slate-950 font-extrabold text-xs sm:text-sm px-4 py-2.5 rounded-2xl border-2 border-amber-500 shadow-md transition flex items-center gap-1.5 shrink-0"
-            title="Bật chế độ nhấp chuột vào bất kỳ đề mục, tiêu đề hay nội dung nào trên màn hình để gõ sửa trực tiếp">
-            <span id="liveEditBtnIcon">✏️</span>
-            <span id="liveEditBtnLabel">Sửa Trực Tiếp Đề Mục Trên Trang</span>
-          </button>
+        <!-- Ô TRA CỨU NHANH -->
+        <div class="flex flex-wrap items-center gap-2.5 w-full lg:w-96">
           <div class="relative flex-1">
             <input type="text" id="globalArchiveSearchInput"
               onkeydown="if(event.key==='Enter') executeGlobalArchiveSearch()"
@@ -314,43 +308,13 @@
             class="nav-tab px-4 py-2.5 rounded-xl text-sm font-bold text-slate-700 bg-white hover:bg-sky-50 border border-slate-200 shrink-0 transition flex items-center gap-2">
             <span>📊</span> <span>5. Kết Quả Thực Nghiệm</span>
           </button>
-          <button type="button" onclick="switchSection('cms')" id="nav-cms"
-            class="nav-tab px-4 py-2.5 rounded-xl text-sm font-extrabold bg-gradient-to-r from-amber-500 to-orange-500 text-white hover:from-amber-600 hover:to-orange-600 shrink-0 transition flex items-center gap-2 ml-auto shadow-md">
-            <span>🛠️</span> <span>Đẩy & Chỉnh Sửa Dữ Liệu</span>
-          </button>
+
         </div>
       </div>
     </nav>
   </header>
 
-  <!-- THANH CÔNG CỤ KHI BẬT CHẾ ĐỘ SỬA TRỰC TIẾP ĐỀ MỤC TRÊN TRANG -->
-  <div id="liveEditFloatingBanner"
-    class="hidden bg-amber-100 border-b-2 border-amber-400 text-slate-900 py-3 px-4 sticky top-[118px] z-30 shadow-md animate-view-in">
-    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3 text-sm">
-      <div class="flex items-center gap-2.5">
-        <span class="bg-red-600 text-white text-xs font-extrabold px-3 py-1 rounded-full uppercase animate-pulse">Đang
-          Bật Chế Độ Sửa Trực Tiếp</span>
-        <span class="font-bold text-slate-900">
-          👉 Nhấp chuột trực tiếp vào <strong>bất kỳ Tên Đề Mục, Menu, Tiêu đề lớn/nhỏ hoặc Đoạn văn có viền nét đứt màu
-            vàng</strong> để gõ sửa chữ ngay tại chỗ! Hệ thống tự động lưu vĩnh viễn khi bạn gõ.
-        </span>
-      </div>
-      <div class="flex items-center gap-2 shrink-0">
-        <button type="button" onclick="saveAllLiveInlineEdits(true)"
-          class="bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-4 py-1.5 rounded-xl text-xs sm:text-sm shadow">
-          💾 Lưu Vĩnh Viễn Mọi Đề Mục
-        </button>
-        <button type="button" onclick="exportStandaloneWebsiteHtml()"
-          class="bg-[#0F4C81] hover:bg-blue-900 text-white font-extrabold px-4 py-1.5 rounded-xl text-xs sm:text-sm shadow">
-          🌐 Xuất File index.html Đưa Lên Netlify
-        </button>
-        <button type="button" onclick="toggleLiveInlineEditMode()"
-          class="bg-slate-800 hover:bg-slate-900 text-white font-bold px-3.5 py-1.5 rounded-xl text-xs sm:text-sm">
-          ✕ Hoàn tất sửa
-        </button>
-      </div>
-    </div>
-  </div>
+
 
 
   <!-- KHÔNG GIAN NỘI DUNG CHÍNH -->
@@ -545,10 +509,7 @@
               Kiến Trúc Vận Hành 4 Tầng Của Kho Học Liệu Số Chùa Hương Ấp
             </h3>
           </div>
-          <button type="button" onclick="switchSection('cms')"
-            class="bg-amber-500 hover:bg-amber-600 text-white text-sm font-bold px-5 py-2.5 rounded-xl transition shadow-sm">
-            🛠️ Vào Cổng Đẩy & Chỉnh Sửa Học Liệu
-          </button>
+
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -607,23 +568,45 @@
           Xuân Tự)</h2>
       </div>
 
+      <!-- VIDEO GIỚI THIỆU DI TÍCH (LẤY TRỰC TIẾP TỪ FILE .MP4 CÙNG THƯ MỤC) -->
+      <div class="space-y-4">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <h3 id="ovVideosHeading" class="text-xl font-extrabold text-slate-900">🎬 Video Giới Thiệu Di Tích</h3>
+          <span class="text-xs font-bold text-slate-500">Phát trực tiếp từ tệp .mp4 cùng thư mục</span>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+          <figure class="rounded-2xl overflow-hidden border border-slate-200 bg-slate-50 shadow-sm flex flex-col">
+            <video id="ovVideo1" controls preload="metadata" playsinline
+              class="w-full aspect-video bg-black object-contain"
+              src="X%C3%A2y%20d%E1%BB%B1ng%20Khu%20di%20t%C3%ADch%20L%C3%BD%20Nam%20%C4%90%E1%BA%BF%20th%C3%A0nh%20%C4%91i%E1%BB%83m%20du%20l%E1%BB%8Bch%20t%C3%A2m%20linh%20tr%E1%BB%8Dng%20%C4%91i%E1%BB%83m%20c%E1%BB%A7a%20t%E1%BB%89nh%20Th%C3%A1i%20Nguy%C3%AAn.mp4"
+              onplay="ovPauseOtherVideos(this)"
+              onerror="ovHandleVideoError('Xây dựng Khu di tích Lý Nam Đế thành điểm du lịch tâm linh trọng điểm của tỉnh Thái Nguyên.mp4')"></video>
+            <figcaption class="px-4 py-3 border-t border-slate-200 bg-white flex items-center justify-between gap-3">
+              <span id="ovVideo1Title" class="text-sm font-bold text-slate-900 leading-snug">Xây dựng Khu di tích Lý Nam Đế thành điểm du lịch tâm linh trọng điểm của tỉnh Thái Nguyên</span>
+              <span class="text-xs font-bold bg-blue-50 text-[#0F4C81] px-2.5 py-1 rounded-lg shrink-0">03:48</span>
+            </figcaption>
+          </figure>
+          <figure class="rounded-2xl overflow-hidden border border-slate-200 bg-slate-50 shadow-sm flex flex-col">
+            <video id="ovVideo2" controls preload="metadata" playsinline
+              class="w-full aspect-video bg-black object-contain"
+              src="FDown.vn_Tai_video_Facebook_720p%20(HD)_f154.mp4"
+              onplay="ovPauseOtherVideos(this)"
+              onerror="ovHandleVideoError('FDown.vn_Tai_video_Facebook_720p (HD)_f154.mp4')"></video>
+            <figcaption class="px-4 py-3 border-t border-slate-200 bg-white flex items-center justify-between gap-3">
+              <span id="ovVideo2Title" class="text-sm font-bold text-slate-900 leading-snug">Video tư liệu Di tích Chùa Hương Ấp (Vạn Xuân Tự)</span>
+              <span class="text-xs font-bold bg-blue-50 text-[#0F4C81] px-2.5 py-1 rounded-lg shrink-0">02:41</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
       <!-- THƯ VIỆN ẢNH DI TÍCH -->
       <div class="space-y-4">
         <div class="flex flex-wrap items-center justify-between gap-3">
           <h3 class="text-xl font-extrabold text-slate-900">📸 Hình Ảnh Di Tích</h3>
-          <div class="flex gap-2">
-            <button type="button" onclick="document.getElementById('ovGalleryInput').click()"
-              class="bg-[#0F4C81] hover:bg-blue-900 text-white text-sm font-bold px-4 py-2 rounded-xl shadow">➕ Thêm
-              Ảnh</button>
-            <button type="button" onclick="ovResetGallery()"
-              class="bg-slate-200 hover:bg-slate-300 text-slate-800 text-sm font-bold px-4 py-2 rounded-xl">↺ Khôi phục
-              mặc định</button>
-          </div>
-          <input type="file" id="ovGalleryInput" accept="image/*" multiple class="hidden" onchange="ovAddFiles(this)" />
         </div>
         <div id="ovGalleryGrid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"></div>
-        <p class="text-xs text-slate-500">Nhấp ảnh để phóng to • Nhấp đúp chú thích để sửa • 🗑️ để xóa. Ảnh thêm mới
-          được lưu trong trình duyệt.</p>
+        <p class="text-xs text-slate-500">Nhấp vào từng ảnh để phóng to xem chi tiết.</p>
       </div>
 
       <!-- BẢN ĐỒ TƯƠNG TÁC (chuyển từ mục Kể Chuyện Lịch Sử) -->
@@ -771,12 +754,7 @@
           <div id="relicFilterResultStatus" class="font-bold text-[#0F4C81]">
             Đang hiển thị danh mục Các Hiện Vật Khảo Cổ (Chuẩn hóa 8 tiêu chí)
           </div>
-          <div class="flex flex-wrap gap-3">
-            <button type="button" onclick="openCmsToEditRelic(null)"
-              class="text-sm font-extrabold text-amber-700 hover:underline flex items-center gap-1">
-              <span>➕ Đẩy thêm Hiện vật khảo cổ mới / Đổi ảnh hàng loạt →</span>
-            </button>
-          </div>
+
         </div>
 
         <div id="relicsGridContainer"
@@ -944,41 +922,7 @@
               </div>
             </div>
 
-            <!-- Hộp đẩy Video Phim hoạt hình (.mp4/.webm) hoặc Ảnh mới lên lưu vĩnh viễn -->
-            <div class="bg-blue-50/80 p-5 rounded-2xl border-2 border-blue-200 space-y-3">
-              <div class="flex items-center justify-between">
-                <h4 class="font-extrabold text-base text-[#0F4C81]">
-                  📤 Đẩy Video Phim Hoạt Hình (.MP4 / .WEBM) Hoặc Ảnh Cảnh Phim Lên Lưu Vĩnh Viễn
-                </h4>
-                <span class="text-xs font-bold text-emerald-800 bg-emerald-100 px-2.5 py-1 rounded-full">Lưu vào
-                  IndexedDB</span>
-              </div>
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
-                <input type="text" id="newAnimTitleInput"
-                  placeholder="Tên tập phim hoạt hình mới (hoặc để trống để cập nhật tập đang chọn)..."
-                  class="p-2.5 rounded-xl border border-slate-300 bg-white font-semibold" />
-                <input type="text" id="newAnimScriptInput" placeholder="Lời thuyết minh / phụ đề tập phim..."
-                  class="p-2.5 rounded-xl border border-slate-300 bg-white" />
-              </div>
-              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm items-center">
-                <label
-                  class="cursor-pointer bg-[#0F4C81] hover:bg-blue-900 text-white font-bold py-2.5 px-4 rounded-xl text-center transition shadow-sm">
-                  <span>🎬 Chọn Tệp Video (.MP4/.WEBM)</span>
-                  <input type="file" id="uploadAnimVideoFile" accept="video/*" class="hidden"
-                    onchange="handleAnimationVideoUpload(event)" />
-                </label>
-                <label
-                  class="cursor-pointer bg-[#0D9488] hover:bg-teal-700 text-white font-bold py-2.5 px-4 rounded-xl text-center transition shadow-sm">
-                  <span>🖼️ Đổi Ảnh Minh Họa Phim</span>
-                  <input type="file" id="uploadAnimPosterFile" accept="image/*" class="hidden"
-                    onchange="handleAnimationPosterUpload(event)" />
-                </label>
-                <button type="button" onclick="addNewAnimationEpisodeText()"
-                  class="bg-amber-400 hover:bg-amber-300 text-slate-950 font-extrabold py-2.5 px-4 rounded-xl transition shadow-sm">
-                  💾 Lưu Tập Phim Mới
-                </button>
-              </div>
-            </div>
+
           </div>
 
           <!-- Danh sách các tập Phim hoạt hình lịch sử -->
@@ -1013,16 +957,7 @@
               class="px-3.5 py-2 rounded-xl text-sm font-bold bg-white text-slate-800 border border-slate-300 hover:bg-blue-50 transition">
               📖 Đọc từng trang
             </button>
-            <label
-              class="cursor-pointer bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-bold px-3.5 py-2 rounded-xl shadow transition">
-              <span>➕ Thêm trang ảnh</span>
-              <input type="file" accept="image/*" multiple class="hidden" onchange="handleAddComicPageUpload(event)" />
-            </label>
-            <button type="button" onclick="resetComicPagesDefault()"
-              class="px-3 py-2 rounded-xl text-xs font-bold bg-slate-200 hover:bg-slate-300 text-slate-800 transition"
-              title="Khôi phục bộ ảnh gốc">
-              ↺ Mặc định
-            </button>
+
           </div>
         </div>
 
@@ -1036,8 +971,7 @@
           <!-- Render bằng JS -->
         </div>
 
-        <input type="file" id="replaceSingleComicImgInput" accept="image/*" class="hidden"
-          onchange="handleReplaceSingleComicImg(event)" />
+
       </div>
 
       <div id="comicLightbox"
@@ -1091,29 +1025,9 @@
           <!-- Render bằng JS -->
         </div>
 
-        <!-- Form đẩy thêm Bộ học liệu trải nghiệm / nộp phiếu học tập thực địa -->
+        <!-- Form học sinh nộp phiếu học tập thực địa -->
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 pt-2">
-          <div class="lg:col-span-6 bg-blue-50/70 p-5 rounded-2xl border border-blue-200 space-y-3 text-sm">
-            <h4 class="font-extrabold text-base text-[#0F4C81]">
-              📤 Đẩy Thêm Bộ Học Liệu Trải Nghiệm Mới (Ảnh / Tài Liệu) Lên Kho Số
-            </h4>
-            <input type="text" id="newKitTitleInput"
-              placeholder="Tên học liệu trải nghiệm (VD: Sổ tay Hộ chiếu Di sản Vạn Xuân)..."
-              class="w-full p-2.5 rounded-xl border border-slate-300 bg-white font-semibold" />
-            <textarea id="newKitDescInput" rows="2"
-              placeholder="Mô tả cách sử dụng bộ học liệu trong tiết học trải nghiệm..."
-              class="w-full p-2.5 rounded-xl border border-slate-300 bg-white"></textarea>
-            <div class="flex flex-wrap items-center gap-3">
-              <input type="file" id="newKitFileInput" accept="image/*,video/*,.pdf,.doc,.docx,.txt"
-                class="flex-1 bg-white p-2 rounded-xl border border-slate-300" />
-              <button type="button" onclick="addNewExperientialKit()"
-                class="bg-[#0F4C81] hover:bg-blue-900 text-white font-extrabold px-5 py-2.5 rounded-xl shadow">
-                💾 Lưu Học Liệu Trải Nghiệm
-              </button>
-            </div>
-          </div>
-
-          <div class="lg:col-span-6 bg-slate-50 p-5 rounded-2xl border border-slate-200 space-y-3 text-sm">
+          <div class="lg:col-span-12 bg-slate-50 p-5 rounded-2xl border border-slate-200 space-y-3 text-sm">
             <h4 class="font-extrabold text-base text-slate-900">
               📝 Học Sinh Nộp Kết Quả Phiếu Học Tập Trải Nghiệm Thực Địa
             </h4>
@@ -1144,7 +1058,7 @@
       <!-- MỤC NHỎ 2.5: TRÒ CHƠI TRẮC NGHIỆM (GAME TƯƠNG TÁC LỊCH SỬ) -->
       <div id="story-sub-quiz" class="hidden space-y-6 animate-view-in">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          <div class="lg:col-span-8 space-y-4">
+          <div class="lg:col-span-12 space-y-4">
             <div class="flex items-center justify-between bg-slate-100 px-5 py-3.5 rounded-2xl border border-slate-200">
               <div>
                 <span class="text-sm font-extrabold text-[#0F4C81] uppercase">🎮 Trò Chơi Trắc Nghiệm: Chinh Phục Di Sản
@@ -1180,24 +1094,7 @@
             </div>
           </div>
 
-          <!-- Bổ sung câu hỏi mới ngay trong mục Trò chơi trắc nghiệm -->
-          <div class="lg:col-span-4 bg-slate-50 p-5 rounded-2xl border border-slate-200 space-y-3 text-sm">
-            <h4 class="font-extrabold text-base text-[#0F4C81]">
-              ➕ Đẩy Thêm Câu Hỏi Mới Vào Trò Chơi
-            </h4>
-            <input type="text" id="quickQuizQ" placeholder="Nội dung câu hỏi trắc nghiệm..."
-              class="w-full p-2.5 rounded-xl border border-slate-300 bg-white" />
-            <input type="text" id="quickQuizCorrect" placeholder="Phương án ĐÚNG..."
-              class="w-full p-2.5 rounded-xl border border-slate-300 bg-white" />
-            <input type="text" id="quickQuizWrongs" placeholder="3 phương án SAI (cách nhau dấu phẩy)..."
-              class="w-full p-2.5 rounded-xl border border-slate-300 bg-white" />
-            <input type="text" id="quickQuizCite" value="HA-VB-01" placeholder="Mã hiện vật trích dẫn (VD: HA-VB-01)"
-              class="w-full p-2.5 rounded-xl border border-slate-300 bg-white font-mono" />
-            <button type="button" onclick="addQuickQuizQuestion()"
-              class="w-full bg-amber-500 hover:bg-amber-600 text-white font-extrabold py-2.5 rounded-xl shadow transition">
-              💾 Lưu Câu Hỏi Vào Trò Chơi
-            </button>
-          </div>
+
         </div>
       </div>
 
@@ -1296,31 +1193,7 @@
                 class="px-4 py-2 rounded-xl bg-[#0D9488] text-white font-bold">Xem Tư liệu Xưa</button>
             </div>
 
-            <!-- Nút đổi trực tiếp Ảnh Xưa / Ảnh Nay và lưu vĩnh viễn -->
-            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2.5 text-sm">
-              <div class="font-extrabold text-slate-900">📷 Thay Ảnh Hoặc Đẩy Cặp Ảnh Đối Chiếu Xưa – Nay Mới:</div>
-              <input type="text" id="newCompareTitleInput"
-                placeholder="Tiêu đề cặp ảnh đối chiếu (nếu muốn thêm cặp mới)..."
-                class="w-full p-2.5 rounded-xl border border-slate-300 bg-white" />
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-                <label
-                  class="cursor-pointer bg-amber-500 hover:bg-amber-600 text-white font-bold py-2.5 px-3 rounded-xl text-center transition">
-                  <span>🏛️ Đẩy Ảnh XƯA Lên</span>
-                  <input type="file" accept="image/*" class="hidden"
-                    onchange="handleUploadBeforeAfterImage(event, 'before')" />
-                </label>
-                <label
-                  class="cursor-pointer bg-[#0F4C81] hover:bg-blue-900 text-white font-bold py-2.5 px-3 rounded-xl text-center transition">
-                  <span>✨ Đẩy Ảnh NAY Lên</span>
-                  <input type="file" accept="image/*" class="hidden"
-                    onchange="handleUploadBeforeAfterImage(event, 'after')" />
-                </label>
-              </div>
-              <button type="button" onclick="saveNewComparePair()"
-                class="w-full bg-[#0D9488] hover:bg-teal-700 text-white font-extrabold py-2.5 rounded-xl transition">
-                💾 Lưu Thành Cặp Đối Chiếu Mới Trong Kho Tư Liệu
-              </button>
-            </div>
+
           </div>
 
           <div class="lg:col-span-7 space-y-3">
@@ -1383,39 +1256,7 @@
           <!-- Render bằng JS -->
         </div>
 
-        <!-- Biểu mẫu đẩy Video / Ảnh / Câu chuyện mới vào Góc Ký Ức Làng Cổ Pháp (Lưu vĩnh viễn) -->
-        <div class="bg-slate-50 p-6 rounded-2xl border-2 border-slate-200 space-y-4">
-          <div class="flex items-center justify-between">
-            <h4 class="font-extrabold text-lg text-[#0F4C81]">
-              📤 Đẩy Tư Liệu Mới (Ảnh / Video / Lời Kể Nhân Chứng) Vào Góc Ký Ức Làng Cổ Pháp
-            </h4>
-            <span class="text-xs font-bold bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full">Lưu vĩnh viễn vào
-              IndexedDB</span>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
-            <input type="text" id="cpMemTitleInput"
-              placeholder="Tiêu đề ký ức (VD: Lời kể Cụ Từ về mạch nước Giếng Ngọc)..."
-              class="p-3 rounded-xl border border-slate-300 bg-white font-semibold" />
-            <input type="text" id="cpMemNarratorInput"
-              placeholder="Nhân chứng / Người cung cấp (VD: Cụ Nguyễn Văn An - 86 tuổi, phường Vạn Xuân)..."
-              class="p-3 rounded-xl border border-slate-300 bg-white" />
-          </div>
-          <textarea id="cpMemStoryInput" rows="3"
-            placeholder="Nội dung câu chuyện ký ức, phong tục hoặc lời kể nhân chứng tại làng Cổ Pháp..."
-            class="w-full p-3 rounded-xl border border-slate-300 bg-white text-sm"></textarea>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm items-center">
-            <div>
-              <label class="block font-bold text-slate-700 mb-1">Đính kèm Hình ảnh hoặc Video tư liệu (.jpg, .png, .mp4,
-                .webm):</label>
-              <input type="file" id="cpMemMediaInput" accept="image/*,video/*,audio/*"
-                class="w-full bg-white p-2 rounded-xl border border-slate-300" />
-            </div>
-            <button type="button" onclick="addCoPhapMemoryItem()"
-              class="bg-[#0F4C81] hover:bg-blue-900 text-white font-extrabold py-3.5 px-6 rounded-xl shadow transition self-end">
-              💾 Lưu Vào Góc Ký Ức Làng Cổ Pháp
-            </button>
-          </div>
-        </div>
+
       </div>
 
       <!-- MỤC NHỎ 3.3: KHÔNG GIAN ĐÓNG GÓP TƯ LIỆU CỘNG ĐỒNG (CÓ TẢI KÈM ẢNH / VIDEO TƯ LIỆU LƯU VĨNH VIỄN) -->
@@ -1522,466 +1363,6 @@
       </div>
     </section>
 
-    <!-- =========================================================================
-         CỔNG QUẢN TRỊ & ĐẨY DỮ LIỆU CHỦ ĐỘNG (LƯU VĨNH VIỄN MỌI ẢNH, VIDEO, TƯ LIỆU VÀO INDEXEDDB & XUẤT FILE HTML)
-         ========================================================================= -->
-    <section id="section-cms"
-      class="hidden archive-card rounded-3xl p-6 sm:p-9 space-y-8 border-2 border-amber-400 animate-view-in">
-      <div
-        class="bg-gradient-to-r from-[#0F4C81] via-[#1E40AF] to-[#0D9488] text-white p-6 sm:p-8 rounded-2xl shadow-lg">
-        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-5">
-          <div class="space-y-2">
-            <span class="bg-amber-400 text-slate-950 text-xs font-extrabold px-3.5 py-1 rounded-full uppercase">
-              🛠️ Quyền Chủ Động 100% Cho Đơn Vị Nhận Bàn Giao (Trường THCS Phổ Yên)
-            </span>
-            <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">
-              Trung Tâm Đẩy Học Liệu Mới & Chỉnh Sửa Dữ Liệu Trực Quan
-            </h2>
-            <p class="text-sm sm:text-base text-blue-100 max-w-3xl leading-relaxed">
-              Mọi hình ảnh, video hoạt hình, truyện tranh số, tư liệu xưa – nay và ký ức cộng đồng khi đẩy lên đều được
-              lưu vĩnh viễn vào <strong>Cơ sở dữ liệu IndexedDB dung lượng lớn</strong> trên trình duyệt (tắt máy mở lại
-              không mất bất kỳ ảnh/video nào) và đóng gói vào tệp <code>index.html</code> để cập nhật lên Netlify.
-            </p>
-          </div>
-          <div class="flex flex-wrap gap-3 shrink-0">
-            <button type="button" onclick="exportStandaloneWebsiteHtml()"
-              class="bg-amber-400 hover:bg-amber-300 text-slate-950 text-sm font-extrabold px-5 py-3 rounded-xl shadow-lg transition">
-              🌐 Xuất Bản Thành Tệp Trang Web Mới
-            </button>
-            <button type="button" onclick="downloadSampleJsonTemplate()"
-              class="bg-white/15 hover:bg-white/25 text-white border border-white/40 text-sm font-bold px-4 py-3 rounded-xl transition">
-              💾 Tải Tệp Sao Lưu Kho Số
-            </button>
-            <label
-              class="cursor-pointer bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-bold px-4 py-3 rounded-xl shadow transition">
-              <span>📂 Nạp Dữ Liệu Hoặc Giọng Thu Âm Từ Máy</span>
-              <input type="file" id="universalDataUpload" accept=".json,.csv,.txt,image/*,video/*,audio/*"
-                class="hidden" onchange="handleUniversalFileUpload(event)" />
-            </label>
-          </div>
-        </div>
-      </div>
-
-
-
-      <!-- KHỐI XUẤT & SAO CHÉP TOÀN BỘ MÃ NGUỒN (CODE) CHO GIÁO VIÊN / ĐƠN VỊ TỰ CHỈNH SỬA -->
-      <div class="bg-slate-900 text-white p-6 rounded-2xl border-2 border-sky-400 space-y-4 shadow-xl">
-        <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 border-b border-slate-700 pb-3">
-          <div>
-            <span class="bg-sky-400 text-slate-950 text-xs font-extrabold px-3 py-1 rounded-full uppercase">
-              💻 Bàn Giao Toàn Bộ Mã Nguồn Mở • Chỉnh Sửa Chủ Động 100%
-            </span>
-            <h3 class="text-lg sm:text-xl font-extrabold text-white mt-1.5">
-              📦 Xem, Sao Chép & Tải Toàn Bộ Mã Code Sản Phẩm (.HTML / .TXT)
-            </h3>
-            <p class="text-sm text-slate-300">
-              Bấm nút bên dưới để sao chép toàn bộ mã nguồn HTML5 + TailwindCSS + JavaScript hoặc tải tệp mã nguồn về
-              máy gửi qua Zalo/Email cho thành viên tự chỉnh sửa.
-            </p>
-          </div>
-          <div class="flex flex-wrap gap-2.5 shrink-0">
-            <button type="button" onclick="copyFullAppSourceCode()"
-              class="bg-amber-400 hover:bg-amber-300 text-slate-950 text-xs sm:text-sm font-extrabold px-4 py-2.5 rounded-xl shadow transition">
-              📋 Sao Chép Toàn Bộ Mã Code
-            </button>
-            <button type="button" onclick="downloadCleanSourceCodeTxt()"
-              class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 text-xs sm:text-sm font-extrabold px-4 py-2.5 rounded-xl shadow transition">
-              📥 Tải Mã Code (.TXT) Gửi Qua Zalo
-            </button>
-            <button type="button" onclick="exportStandaloneWebsiteHtml()"
-              class="bg-sky-500 hover:bg-sky-400 text-slate-950 text-xs sm:text-sm font-extrabold px-4 py-2.5 rounded-xl shadow transition">
-              🌐 Tải File index.html Đầy Đủ
-            </button>
-            <button type="button" onclick="toggleSourceCodeViewerBox()"
-              class="bg-slate-700 hover:bg-slate-600 text-white text-xs sm:text-sm font-bold px-3.5 py-2.5 rounded-xl transition">
-              👁️ Hiện / Ẩn Khung Mã Code
-            </button>
-          </div>
-        </div>
-
-        <div id="sourceCodeViewerContainer" class="space-y-2">
-          <div class="flex items-center justify-between text-xs text-amber-300 font-mono">
-            <span>📄 Tệp đơn độc lập: index.html (Tích hợp HTML5 + CSS3 + JavaScript + IndexedDB)</span>
-            <span id="sourceCodeCharCount">Đang nạp mã nguồn...</span>
-          </div>
-          <textarea id="fullSourceCodeTextarea" readonly rows="10"
-            class="w-full p-3.5 rounded-xl bg-slate-950 text-emerald-300 font-mono text-xs border border-slate-700 focus:outline-none focus:border-amber-400"></textarea>
-        </div>
-      </div>
-
-      <!-- KHỐI MỚI: BẢNG SỬA NHANH TÊN TẤT CẢ CÁC ĐỀ MỤC LỚN & ĐỀ MỤC NHỎ TRONG APP -->
-      <div class="bg-amber-50/90 p-6 rounded-2xl border-2 border-amber-400 space-y-4">
-        <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 border-b border-amber-200 pb-3">
-          <div>
-            <span class="bg-amber-500 text-slate-950 text-xs font-extrabold px-3 py-1 rounded-full uppercase">
-              ✏️ Tùy Biến Đề Mục 100% Theo Ý Muốn • Sửa Trực Tiếp Trên Trang Hoặc Sửa Tại Bảng Này
-            </span>
-            <h3 class="text-lg sm:text-xl font-extrabold text-slate-900 mt-1.5">
-              🗂️ Bảng Đổi Tên Trực Tiếp Tất Cả Các Đề Mục Lớn & Đề Mục Nhỏ Trong App
-            </h3>
-            <p class="text-sm text-slate-700">
-              Bạn có thể bấm nút <strong>"✏️ Sửa Trực Tiếp Đề Mục Trên Trang"</strong> ở góc trên cùng để nhấp chuột vào
-              chữ bất kỳ trên màn hình và gõ sửa ngay, hoặc đổi tên toàn bộ các đề mục chính – phụ tại bảng dưới đây:
-            </p>
-          </div>
-          <div class="flex flex-wrap gap-2 shrink-0">
-            <button type="button" onclick="toggleLiveInlineEditMode()"
-              class="bg-amber-400 hover:bg-amber-300 text-slate-950 text-xs sm:text-sm font-extrabold px-4 py-2 rounded-xl border border-amber-600 shadow transition">
-              ✏️ Bật Sửa Chữ Trực Tiếp Trên Màn Hình
-            </button>
-            <button type="button" onclick="saveMenuLabelsFromCms()"
-              class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-extrabold px-4 py-2 rounded-xl shadow transition">
-              💾 Lưu Tên Các Đề Mục
-            </button>
-          </div>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
-          <!-- Cột 1: Các Đề mục lớn trên Thanh Menu chính -->
-          <div class="bg-white p-4 rounded-xl border border-amber-200 space-y-2.5">
-            <div class="font-extrabold text-[#0F4C81] border-b border-slate-100 pb-1.5">1. Tên Các Đề Mục Lớn (Thanh
-              Menu Chính)</div>
-            <div>
-              <label class="text-xs font-bold text-slate-500">Đề mục Trang chủ:</label>
-              <input type="text" id="lbl_nav_home" value="Trang Chủ Động"
-                class="w-full p-2 rounded-lg border border-slate-300 font-bold text-slate-900" />
-            </div>
-            <div>
-              <label class="text-xs font-bold text-slate-500">Đề mục Chuyên mục 2:</label>
-              <input type="text" id="lbl_nav_cat2" value="2. Các Hiện Vật Khảo Cổ"
-                class="w-full p-2 rounded-lg border border-slate-300 font-bold text-slate-900" />
-            </div>
-            <div>
-              <label class="text-xs font-bold text-slate-500">Đề mục Chuyên mục 3:</label>
-              <input type="text" id="lbl_nav_cat1" value="3. Kể Chuyện Lịch Sử"
-                class="w-full p-2 rounded-lg border border-slate-300 font-bold text-slate-900" />
-            </div>
-            <div>
-              <label class="text-xs font-bold text-slate-500">Đề mục Chuyên mục 4:</label>
-              <input type="text" id="lbl_nav_cat4" value="4. Bảo Tồn Ký Ức & Tri Thức Cộng Đồng"
-                class="w-full p-2 rounded-lg border border-slate-300 font-bold text-slate-900" />
-            </div>
-            <div style="display:none">
-              <label class="text-xs font-bold text-slate-500">Đề mục Chuyên mục 5:</label>
-              <input type="text" id="lbl_nav_cat5" value="5. Kết Quả Thực Nghiệm"
-                class="w-full p-2 rounded-lg border border-slate-300 font-bold text-slate-900" />
-            </div>
-          </div>
-
-          <!-- Cột 2: 5 Đề mục nhỏ trong mục Kể Chuyện Lịch Sử -->
-          <div class="bg-white p-4 rounded-xl border border-amber-200 space-y-2.5">
-            <div class="font-extrabold text-[#0D9488] border-b border-slate-100 pb-1.5">3. Bốn Đề Mục Nhỏ (Trong Kể
-              Chuyện Lịch Sử)</div>
-            <div>
-              <label class="text-xs font-bold text-slate-500">Mục nhỏ 3.1:</label>
-              <input type="text" id="lbl_st_anim" value="1. Phim Hoạt Hình"
-                class="w-full p-2 rounded-lg border border-slate-300 font-semibold text-slate-900" />
-            </div>
-            <div>
-              <label class="text-xs font-bold text-slate-500">Mục nhỏ 3.2:</label>
-              <input type="text" id="lbl_st_comic" value="2. Truyện Tranh Số"
-                class="w-full p-2 rounded-lg border border-slate-300 font-semibold text-slate-900" />
-            </div>
-            <div>
-              <label class="text-xs font-bold text-slate-500">Bản đồ (đã chuyển sang Chuyên mục 1):</label>
-              <input type="text" id="lbl_st_map" value="3. Bản Đồ Tương Tác"
-                class="w-full p-2 rounded-lg border border-slate-300 font-semibold text-slate-900" />
-            </div>
-            <div>
-              <label class="text-xs font-bold text-slate-500">Mục nhỏ 3.3:</label>
-              <input type="text" id="lbl_st_kit" value="3. Bộ Học Liệu Trải Nghiệm"
-                class="w-full p-2 rounded-lg border border-slate-300 font-semibold text-slate-900" />
-            </div>
-            <div>
-              <label class="text-xs font-bold text-slate-500">Mục nhỏ 3.4:</label>
-              <input type="text" id="lbl_st_quiz" value="4. Trò Chơi Trắc Nghiệm"
-                class="w-full p-2 rounded-lg border border-slate-300 font-semibold text-slate-900" />
-            </div>
-          </div>
-
-          <!-- Cột 3: 3 Đề mục nhỏ trong Bảo Tồn Ký Ức & 3 Đề mục nhỏ trong Hiện Vật -->
-          <div class="bg-white p-4 rounded-xl border border-amber-200 space-y-2.5">
-            <div class="font-extrabold text-rose-700 border-b border-slate-100 pb-1.5">4. Các Đề Mục Nhỏ (Bảo Tồn Ký Ức
-              & Hiện Vật)</div>
-            <div>
-              <label class="text-xs font-bold text-slate-500">Mục nhỏ 4.1:</label>
-              <input type="text" id="lbl_mem_compare" value="🌓 1. Kho Tư Liệu Đối Chiếu Xưa Và Nay"
-                class="w-full p-2 rounded-lg border border-slate-300 font-semibold text-slate-900" />
-            </div>
-            <div>
-              <label class="text-xs font-bold text-slate-500">Mục nhỏ 4.2:</label>
-              <input type="text" id="lbl_mem_cophap" value="🌾 2. Góc Ký Ức Làng Cổ Pháp"
-                class="w-full p-2 rounded-lg border border-slate-300 font-semibold text-slate-900" />
-            </div>
-            <div>
-              <label class="text-xs font-bold text-slate-500">Mục nhỏ 4.3:</label>
-              <input type="text" id="lbl_mem_comm" value="🤝 3. Không Gian Đóng Góp Tư Liệu Cộng Đồng"
-                class="w-full p-2 rounded-lg border border-slate-300 font-semibold text-slate-900" />
-            </div>
-            <div>
-              <label class="text-xs font-bold text-slate-500">Phân hệ Hiện vật khảo cổ:</label>
-              <input type="text" id="lbl_arch_relics" value="🏺 Các Hiện Vật Khảo Cổ"
-                class="w-full p-2 rounded-lg border border-slate-300 font-semibold text-slate-900" />
-            </div>
-            <div>
-              <label class="text-xs font-bold text-slate-500">Phân hệ Văn bia & Thuyết minh:</label>
-              <input type="text" id="lbl_arch_stele" value="📜 Văn Bia Đối Chiếu 3 Cột (HA-VB-01)"
-                class="w-full p-2 rounded-lg border border-slate-300 font-semibold text-slate-900" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- KHỐI ĐỔI ẢNH NHANH 1 CHẠM CHO TỪNG HIỆN VẬT KHẢO CỔ & KIỂM TRA TRẠNG THÁI LƯU VĨNH VIỄN -->
-      <div class="bg-emerald-50/90 p-6 rounded-2xl border-2 border-emerald-400 space-y-4">
-        <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 border-b border-emerald-200 pb-3">
-          <div>
-            <span class="bg-emerald-700 text-white text-xs font-extrabold px-3 py-1 rounded-full uppercase">
-              🛡️ Cơ Chế Lưu Vĩnh Viễn Đa Tầng • Tự Động Nén Ảnh HD + Lưu Trữ IndexedDB Không Giới Hạn 5MB
-            </span>
-            <h3 class="text-lg sm:text-xl font-extrabold text-slate-900 mt-1.5">
-              🖼️ Bảng Đổi Ảnh Nhanh Từng Hiện Vật Khảo Cổ & Kiểm Tra Ảnh Đã Lưu
-            </h3>
-            <p class="text-sm text-slate-700">
-              Bấm nút <strong>"📷 Đổi ảnh ngay"</strong> ở bất kỳ hiện vật nào bên dưới để tải ảnh từ máy lên. Hệ thống
-              tự động nén chuẩn HD và lưu ngay vào <strong>IndexedDB</strong> (không bao giờ bị mất một vài ảnh khi mở
-              lại ứng dụng!).
-            </p>
-          </div>
-          <div class="flex flex-wrap gap-2 shrink-0">
-            <span id="idbStorageBadge"
-              class="bg-white text-emerald-800 border border-emerald-400 text-xs font-extrabold px-3.5 py-2 rounded-xl shadow-sm">
-              ✅ Đã đồng bộ bộ nhớ IndexedDB
-            </span>
-            <button type="button" onclick="exportStandaloneWebsiteHtml()"
-              class="bg-[#0F4C81] hover:bg-blue-900 text-white text-xs sm:text-sm font-extrabold px-4 py-2 rounded-xl shadow transition">
-              🌐 Tải File index.html Đưa Lên Netlify
-            </button>
-          </div>
-        </div>
-
-        <div id="cmsQuickImageGrid"
-          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3.5 max-h-[420px] overflow-y-auto pr-1">
-          <!-- Render danh sách thẻ đổi ảnh nhanh bằng JS -->
-        </div>
-        <input type="file" id="quickSingleRelicImgInput" accept="image/*" class="hidden"
-          onchange="handleQuickSingleRelicImageChange(event)" />
-      </div>
-
-      <div id="uploadStatusLog"
-        class="text-sm bg-blue-50 p-4 rounded-xl border border-blue-200 text-[#0F4C81] font-semibold">
-        ✅ <strong>Sẵn sàng:</strong> Mọi hình ảnh, video và tư liệu đẩy lên ở tất cả các chuyên mục đều được lưu vĩnh
-        viễn vào bộ nhớ <code>IndexedDB</code> của trình duyệt.
-      </div>
-
-      <!-- FORM QUẢN TRỊ CHI TIẾT -->
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
-        <div class="lg:col-span-6 bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-4">
-          <div class="flex items-center justify-between border-b border-slate-200 pb-3">
-            <h3 class="font-extrabold text-base sm:text-lg text-[#0F4C81]" id="cmsRelicFormHeader">
-              1. Đẩy Hiện Vật Khảo Cổ Mới / Chỉnh Sửa Chi Tiết
-            </h3>
-            <button type="button" onclick="resetCmsRelicForm()" class="text-sm font-bold text-[#0D9488] underline">
-              + Làm mới biểu mẫu
-            </button>
-          </div>
-
-          <div>
-            <label class="block text-sm font-bold text-slate-800 mb-1">Chọn hiện vật khảo cổ có sẵn nếu muốn
-              sửa:</label>
-            <select id="cmsSelectExistingRelic" onchange="loadRelicIntoCmsForm(this.value)"
-              class="w-full text-sm p-3 rounded-xl border border-slate-300 bg-white font-semibold text-slate-900">
-              <!-- Render bằng JS -->
-            </select>
-          </div>
-
-          <div class="grid grid-cols-2 gap-3 text-sm">
-            <div>
-              <label class="block font-bold text-slate-700 mb-1">1. Mã định danh:</label>
-              <input type="text" id="newArtCode" placeholder="VD: HA-DT-25"
-                class="w-full p-2.5 rounded-xl border border-slate-300 bg-white font-mono font-bold text-rose-700" />
-            </div>
-            <div>
-              <label class="block font-bold text-slate-700 mb-1">Thuộc bộ sưu tập:</label>
-              <select id="newArtGroup" class="w-full p-2.5 rounded-xl border border-slate-300 bg-white font-semibold">
-                <option value="HA">Chùa Hương Ấp (HA)</option>
-
-              </select>
-            </div>
-          </div>
-
-          <div class="text-sm">
-            <label class="block font-bold text-slate-700 mb-1">2. Tên gọi khoa học của Hiện vật:</label>
-            <input type="text" id="newArtName" placeholder="VD: Bia đá Bản giáp hậu bi ký..."
-              class="w-full p-2.5 rounded-xl border border-slate-300 bg-white font-semibold" />
-          </div>
-
-          <div class="grid grid-cols-2 gap-3 text-sm">
-            <div>
-              <label class="block font-bold text-slate-700 mb-1">3. Loại hình:</label>
-              <input type="text" id="newArtType" placeholder="VD: Văn bia / Tượng gỗ..."
-                class="w-full p-2.5 rounded-xl border border-slate-300 bg-white" />
-            </div>
-            <div>
-              <label class="block font-bold text-slate-700 mb-1">4. Niên đại:</label>
-              <input type="text" id="newArtEra" placeholder="VD: Thời Nguyễn..."
-                class="w-full p-2.5 rounded-xl border border-slate-300 bg-white" />
-            </div>
-          </div>
-
-          <div class="grid grid-cols-2 gap-3 text-sm">
-            <div>
-              <label class="block font-bold text-slate-700 mb-1">5. Vị trí lưu giữ:</label>
-              <input type="text" id="newArtLocation" placeholder="VD: Chính điện Tam Bảo..."
-                class="w-full p-2.5 rounded-xl border border-slate-300 bg-white" />
-            </div>
-            <div>
-              <label class="block font-bold text-slate-700 mb-1">Tình trạng & Mã QR:</label>
-              <input type="text" id="newArtCondition" placeholder="VD: Tốt; QR: QR-HA-25"
-                class="w-full p-2.5 rounded-xl border border-slate-300 bg-white" />
-            </div>
-          </div>
-
-          <div class="text-sm">
-            <label class="block font-bold text-slate-700 mb-1">6. Mô tả khoa học chi tiết:</label>
-            <textarea id="newArtDesc" rows="2" placeholder="Nhập chất liệu, kích thước, hoa văn, ý nghĩa lịch sử..."
-              class="w-full p-2.5 rounded-xl border border-slate-300 bg-white"></textarea>
-          </div>
-
-          <div class="grid grid-cols-2 gap-3 text-sm">
-            <div>
-              <label class="block font-bold text-slate-700 mb-1">7. Nguồn kiểm chứng:</label>
-              <input type="text" id="newArtSource" value="Hồ sơ di tích quốc gia 2014 & THCS Phổ Yên"
-                class="w-full p-2.5 rounded-xl border border-slate-300 bg-white" />
-            </div>
-            <div>
-              <label class="block font-bold text-slate-700 mb-1">8. Giấy phép bản quyền:</label>
-              <input type="text" id="newArtRights" value="Học liệu mở phục vụ giáo dục"
-                class="w-full p-2.5 rounded-xl border border-slate-300 bg-white font-semibold" />
-            </div>
-          </div>
-
-          <div class="text-sm">
-            <label class="block font-bold text-slate-700 mb-1">Đẩy Ảnh Hiện vật từ máy tính lên:</label>
-            <input type="file" id="newArtImgInput" accept="image/*"
-              class="w-full bg-white p-2 rounded-xl border border-slate-300" />
-          </div>
-
-          <div class="flex gap-3 pt-2">
-            <button type="button" onclick="saveOrUpdateRelicFromCms()"
-              class="flex-1 bg-[#0F4C81] hover:bg-blue-900 text-white text-sm font-extrabold py-3 rounded-xl shadow transition">
-              💾 Lưu / Đẩy Học Liệu Vào Kho Số
-            </button>
-            <button type="button" onclick="deleteSelectedRelicFromCms()" id="btnDeleteRelicCms"
-              class="hidden bg-rose-600 hover:bg-rose-700 text-white text-sm font-bold px-4 py-3 rounded-xl transition">
-              🗑️ Xóa
-            </button>
-          </div>
-        </div>
-
-        <div class="lg:col-span-6 space-y-6">
-          <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-3 text-sm">
-            <h3 class="font-extrabold text-base sm:text-lg text-[#0D9488] border-b border-slate-200 pb-2">
-              2. Chỉnh Sửa Tiêu Đề Cổng Học Liệu & Kịch Bản Thuyết Minh
-            </h3>
-            <div>
-              <label class="block font-bold text-slate-700 mb-1">Tên Cổng Học Liệu Số:</label>
-              <input type="text" id="bldSiteTitle" value="KHO HỌC LIỆU SỐ & BẢN ĐỒ DI SẢN CHÙA HƯƠNG ẤP (VẠN XUÂN TỰ)"
-                class="w-full p-2.5 rounded-xl border border-slate-300 bg-white font-bold" />
-            </div>
-            <div>
-              <label class="block font-bold text-slate-700 mb-1">Mô tả định vị dưới tiêu đề:</label>
-              <input type="text" id="bldSiteSlogan"
-                value="Phục vụ Giáo dục Lịch sử Địa phương & Bảo tồn Di tích Quốc gia – Trường THCS Phổ Yên, Thái Nguyên"
-                class="w-full p-2.5 rounded-xl border border-slate-300 bg-white" />
-            </div>
-            <div>
-              <label class="block font-bold text-slate-700 mb-1">Tên Đơn vị Trường học:</label>
-              <input type="text" id="bldSchoolName" value="TRƯỜNG THCS PHỔ YÊN – THÀNH PHỐ PHỔ YÊN, TỈNH THÁI NGUYÊN"
-                class="w-full p-2.5 rounded-xl border border-slate-300 bg-white font-bold text-[#0F4C81]" />
-            </div>
-            <div>
-              <label class="block font-bold text-slate-700 mb-1">Tiêu đề trên Banner Trang chủ:</label>
-              <input type="text" id="bldHeroHeading" value="Kho Học Liệu Số Chùa Hương Ấp (Vạn Xuân Tự)"
-                class="w-full p-2.5 rounded-xl border border-slate-300 bg-white" />
-            </div>
-            <div class="grid grid-cols-2 gap-3">
-              <div>
-                <label class="block font-bold text-slate-700 mb-1">% Giỏi Trước Thực Nghiệm:</label>
-                <input type="number" id="expPreGood" value="24.2" step="0.1"
-                  class="w-full p-2.5 rounded-xl border border-slate-300 bg-white font-bold" />
-              </div>
-              <div>
-                <label class="block font-bold text-slate-700 mb-1">% Giỏi Sau Thực Nghiệm:</label>
-                <input type="number" id="expPostGood" value="68.3" step="0.1"
-                  class="w-full p-2.5 rounded-xl border border-slate-300 bg-white font-bold text-emerald-700" />
-              </div>
-            </div>
-            <div>
-              <label class="block font-bold text-slate-700 mb-1">Lời thuyết minh mở đầu của Học sinh (100% Tiếng
-                Việt):</label>
-              <textarea id="bldStudentPreface" rows="3"
-                class="w-full p-2.5 rounded-xl border border-slate-300 bg-white text-slate-800">Kính thưa Ban Giám khảo, quý thầy cô giáo và các bạn học sinh! Chúng em là nhóm học sinh nghiên cứu Khoa học Kỹ thuật của Trường Trung học cơ sở Phổ Yên, tỉnh Thái Nguyên. Hôm nay, chúng em xin thuyết minh về Hệ sinh thái Kho học liệu số và Bản đồ di sản tương tác Chùa Hương Ấp (Vạn Xuân Tự)...</textarea>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              <div>
-                <label class="block font-bold text-slate-700 mb-1">Thay ảnh Banner Trang chủ:</label>
-                <input type="file" accept="image/*" onchange="handleBuilderBannerUpload(event)"
-                  class="w-full bg-white p-2 rounded-xl border border-slate-300" />
-              </div>
-              <div>
-                <label class="block font-bold text-slate-700 mb-1">Tải tệp ghi âm giọng Học sinh (.mp3/.wav):</label>
-                <input type="file" accept="audio/*" onchange="handleStudentVoiceUpload(event)"
-                  class="w-full bg-white p-2 rounded-xl border border-slate-300" />
-              </div>
-            </div>
-            <button type="button" onclick="applyCustomBuilderForm()"
-              class="w-full bg-[#0D9488] hover:bg-teal-700 text-white font-extrabold py-3 rounded-xl shadow transition">
-              🚀 Cập Nhật Ngay Lên Giao Diện Chính
-            </button>
-          </div>
-
-          <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-3 text-sm">
-            <h3 class="font-extrabold text-base text-slate-900 border-b border-slate-200 pb-2">
-              3. Đẩy Thêm Điểm Bản Đồ Di Sản & Câu Hỏi Trắc Nghiệm
-            </h3>
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
-              <input type="text" id="newPoiName" placeholder="Tên điểm di tích mới..."
-                class="p-2.5 rounded-xl border border-slate-300 bg-white" />
-              <input type="number" step="0.0001" id="newPoiLat" value="21.4195" placeholder="Vĩ độ"
-                class="p-2.5 rounded-xl border border-slate-300 bg-white" />
-              <input type="number" step="0.0001" id="newPoiLng" value="105.9025" placeholder="Kinh độ"
-                class="p-2.5 rounded-xl border border-slate-300 bg-white" />
-            </div>
-            <div class="flex gap-2">
-              <input type="text" id="newPoiDesc" placeholder="Ý nghĩa lịch sử của điểm di tích..."
-                class="flex-1 p-2.5 rounded-xl border border-slate-300 bg-white" />
-              <button type="button" onclick="addNewMapPoiFromBuilder()"
-                class="bg-[#0F4C81] text-white font-bold px-4 py-2.5 rounded-xl shrink-0">
-                ➕ Ghim Bản Đồ
-              </button>
-            </div>
-
-            <div class="pt-3 border-t border-slate-200 space-y-2">
-              <input type="text" id="newQuizQ" placeholder="Nhập câu hỏi trắc nghiệm mới..."
-                class="w-full p-2.5 rounded-xl border border-slate-300 bg-white" />
-              <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
-                <input type="text" id="newQuizCorrect" placeholder="Đáp án đúng..."
-                  class="p-2.5 rounded-xl border border-slate-300 bg-white" />
-                <input type="text" id="newQuizWrong" placeholder="3 đáp án sai (cách dấu phẩy)..."
-                  class="p-2.5 rounded-xl border border-slate-300 bg-white" />
-                <input type="text" id="newQuizCiteCode" value="HA-VB-01" placeholder="Mã trích dẫn (HA-VB-01)"
-                  class="p-2.5 rounded-xl border border-slate-300 bg-white font-mono" />
-              </div>
-              <button type="button" onclick="addNewQuizFromBuilder()"
-                class="w-full bg-amber-500 hover:bg-amber-600 text-white font-bold py-2.5 rounded-xl transition">
-                ➕ Đẩy Vào Ngân Hàng Câu Hỏi Trắc Nghiệm
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
   </main>
 
@@ -2055,14 +1436,7 @@
                 class="bg-[#0F4C81] text-white text-xs font-bold px-3 py-2 rounded-xl hover:bg-blue-900">
                 🖨️ In Nhãn QR
               </button>
-              <button type="button" onclick="triggerQuickRelicImageSelect(state.selectedRelicId)"
-                class="bg-emerald-600 text-white text-xs font-bold px-3 py-2 rounded-xl hover:bg-emerald-700">
-                📷 Đổi Ảnh Ngay
-              </button>
-              <button type="button" id="metaModalEditBtn" onclick="openCmsToEditRelic('HA-VB-01')"
-                class="bg-amber-400 text-slate-950 text-xs font-bold px-3 py-2 rounded-xl hover:bg-amber-300">
-                ✏️ Sửa Hồ Sơ
-              </button>
+
             </div>
           </div>
         </div>
@@ -2146,10 +1520,7 @@
         </div>
       </div>
       <div class="flex justify-end gap-3 pt-2 border-t border-slate-200">
-        <button type="button" onclick="closeModal('schoolModal'); switchSection('cms')"
-          class="bg-[#0F4C81] text-white text-sm font-bold px-5 py-2.5 rounded-xl">
-          🛠️ Mở Cổng Đẩy &amp; Chỉnh Sửa Dữ Liệu
-        </button>
+
         <button type="button" onclick="closeModal('schoolModal')"
           class="bg-slate-200 text-slate-700 text-sm font-bold px-5 py-2.5 rounded-xl">
           Đóng
@@ -2183,46 +1554,7 @@
   </div>
 
 
-  <!-- MODAL SỬA NHANH BẤT KỲ MỤC NÀO TRONG APP (THAY THẾ HOÀN TOÀN PROMPT) -->
-  <div id="quickInlineEditModal"
-    class="hidden fixed inset-0 z-50 bg-slate-900/65 backdrop-blur-sm flex items-center justify-center p-4">
-    <div class="bg-white border-2 border-amber-400 rounded-3xl max-w-lg w-full p-6 shadow-2xl space-y-4">
-      <div class="flex items-center justify-between border-b border-slate-200 pb-3">
-        <h3 class="text-lg sm:text-xl font-extrabold text-[#0F4C81]" id="qeModalHeader">✏️ Chỉnh Sửa Trực Tiếp Nội Dung
-        </h3>
-        <button type="button" onclick="closeModal('quickInlineEditModal')"
-          class="text-slate-400 hover:text-slate-800 font-bold text-lg">✕</button>
-      </div>
-      <div class="space-y-3 text-sm">
-        <div>
-          <label class="block font-bold text-slate-700 mb-1" id="qeLabel1">Tiêu đề đề mục:</label>
-          <input type="text" id="qeInput1"
-            class="w-full p-3 rounded-xl border border-slate-300 bg-slate-50 font-bold text-slate-900" />
-        </div>
-        <div id="qeGroup2">
-          <label class="block font-bold text-slate-700 mb-1" id="qeLabel2">Thông tin phụ / Nguồn / Phân loại:</label>
-          <input type="text" id="qeInput2"
-            class="w-full p-3 rounded-xl border border-slate-300 bg-slate-50 text-slate-800" />
-        </div>
-        <div>
-          <label class="block font-bold text-slate-700 mb-1" id="qeLabel3">Nội dung thuyết minh / Mô tả chi
-            tiết:</label>
-          <textarea id="qeInput3" rows="4"
-            class="w-full p-3 rounded-xl border border-slate-300 bg-slate-50 text-slate-800"></textarea>
-        </div>
-      </div>
-      <div class="flex justify-end gap-2.5 pt-2 border-t border-slate-200">
-        <button type="button" onclick="closeModal('quickInlineEditModal')"
-          class="bg-slate-200 text-slate-800 text-sm font-bold px-4 py-2.5 rounded-xl">
-          Hủy
-        </button>
-        <button type="button" onclick="confirmQuickInlineEditModal()"
-          class="bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-extrabold px-5 py-2.5 rounded-xl shadow">
-          💾 Lưu Thay Đổi Vĩnh Viễn
-        </button>
-      </div>
-    </div>
-  </div>
+
 
   <!-- THÔNG BÁO NỔI (TOAST) -->
   <div id="toastContainer" class="fixed top-20 right-5 z-50 space-y-2 pointer-events-none"></div>
@@ -3327,12 +2659,13 @@
         switchSection('overview');
         return;
       }
-      const mapLegacy = { sec1: 'cat1', sec2: 'cat2', sec3: 'cat1', sec4: 'cat1', sec5: 'cat2', sec6: 'cat1', builder: 'cms' };
+      const mapLegacy = { sec1: 'cat1', sec2: 'cat2', sec3: 'cat1', sec4: 'cat1', sec5: 'cat2', sec6: 'cat1', builder: 'home', cms: 'home' };
       const target = mapLegacy[secId] || secId;
       state.activeSection = target;
 
+      if (target !== 'overview') ovPauseOtherVideos(null);
       const homeWrap = document.getElementById('view-home-wrapper');
-      const secIds = ['overview', 'cat1', 'cat2', 'cat4', 'cat5', 'cms'];
+      const secIds = ['overview', 'cat1', 'cat2', 'cat4', 'cat5'];
 
       if (target === 'home') {
         if (homeWrap) homeWrap.classList.remove('hidden');
@@ -3348,14 +2681,12 @@
         });
       }
 
-      const navIds = ['home', 'overview', 'cat2', 'cat1', 'cat4', 'cat5', 'cms'];
+      const navIds = ['home', 'overview', 'cat2', 'cat1', 'cat4', 'cat5'];
       navIds.forEach(n => {
         const btn = document.getElementById('nav-' + n);
         if (!btn) return;
         if (n === target) {
           btn.className = "nav-tab px-4 py-2.5 rounded-xl text-sm font-extrabold bg-[#0F4C81] text-white shrink-0 transition flex items-center gap-2 shadow-md";
-        } else if (n === 'cms') {
-          btn.className = "nav-tab px-4 py-2.5 rounded-xl text-sm font-extrabold bg-gradient-to-r from-amber-500 to-orange-500 text-white hover:from-amber-600 hover:to-orange-600 shrink-0 transition flex items-center gap-2 ml-auto shadow-md";
         } else {
           btn.className = "nav-tab px-4 py-2.5 rounded-xl text-sm font-bold text-slate-700 bg-white hover:bg-sky-50 border border-slate-200 shrink-0 transition flex items-center gap-2";
         }
@@ -3373,6 +2704,18 @@
       }, 100);
 
       window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function ovPauseOtherVideos(activeEl) {
+      ['ovVideo1', 'ovVideo2'].forEach(id => {
+        const v = document.getElementById(id);
+        if (v && v !== activeEl && !v.paused) v.pause();
+      });
+    }
+    function ovHandleVideoError(fileName) {
+      if (typeof showToast === 'function') {
+        showToast('Không tìm thấy tệp video "' + fileName + '" cùng thư mục với file HTML!', 'warn');
+      }
     }
 
     // =========================================================================
@@ -3411,14 +2754,10 @@
         <figure class="relative rounded-2xl overflow-hidden border border-slate-200 bg-slate-100 shadow-sm flex flex-col ${feat ? 'col-span-2 md:row-span-2' : ''}">
           <img src="${ovEsc(it.src)}" alt="${ovEsc(it.cap)}" loading="lazy" class="w-full object-cover cursor-pointer hover:opacity-90 transition ${feat ? 'h-56 md:h-auto md:flex-1 md:min-h-0' : 'h-44'}" style="object-position:center ${/_5\.jpg$/.test(it.src) ? '25%' : '50%'}" onclick="ovOpenLightbox(${i})" />
           <figcaption class="px-3 py-2 text-xs font-bold text-slate-800 flex items-center justify-between gap-2 bg-white">
-            <span class="truncate" title="Nhấp đúp để sửa chú thích" ondblclick="ovEditCaption(${i})">${ovEsc(it.cap) || 'Chưa có chú thích'}</span>
-            <button type="button" onclick="ovRemove(${i})" class="text-red-600 hover:text-red-800 shrink-0" title="Xóa ảnh">🗑️</button>
+            <span class="truncate">${ovEsc(it.cap) || 'Hình ảnh di tích'}</span>
           </figcaption>
         </figure>`;
       }).join('');
-      for (let k = 0; k < 2; k++) {
-        html += `<button type="button" onclick="document.getElementById('ovGalleryInput').click()" class="col-span-2 md:col-span-1 lg:col-span-2 h-[120px] rounded-2xl border-2 border-dashed border-slate-300 text-slate-500 hover:border-[#0F4C81] hover:text-[#0F4C81] hover:bg-blue-50 transition flex flex-col items-center justify-center gap-1 font-bold text-sm"><span class="text-2xl">＋</span><span>Chỗ trống thêm ảnh</span></button>`;
-      }
       grid.innerHTML = html;
     }
     function ovAddFiles(input) {
@@ -3666,12 +3005,6 @@
               <button type="button" onclick="openMetadataModal('${a.id}')" class="flex-1 bg-[#0F4C81] hover:bg-blue-900 text-white text-sm font-bold py-2.5 rounded-xl transition">
                 ${isHaRelic(a) ? '🏷️ Hồ Sơ' : '🏷️ Hồ Sơ &amp; QR'}
               </button>
-              <button type="button" onclick="triggerQuickRelicImageSelect('${a.id}')" class="bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-bold px-3 py-2.5 rounded-xl transition" title="Đổi ảnh trực tiếp cho hiện vật này">
-                📷 Đổi ảnh
-              </button>
-              <button type="button" onclick="openCmsToEditRelic('${a.id}')" class="bg-slate-100 hover:bg-amber-100 text-slate-800 border border-slate-300 text-sm font-bold px-3 py-2.5 rounded-xl transition" title="Sửa thông tin">
-                ✏️
-              </button>
             </div>
           </div>
         `).join('');
@@ -3687,10 +3020,8 @@
             <td class="p-3.5 text-slate-700">${escapeHtml(a.era)}</td>
             <td class="p-3.5 text-slate-600">${escapeHtml(a.location)}</td>
             <td class="p-3.5 font-mono text-xs text-[#0D9488] font-bold">${escapeHtml(a.condition)}</td>
-            <td class="p-3.5 text-center whitespace-nowrap space-x-1.5">
+            <td class="p-3.5 text-center whitespace-nowrap">
               <button type="button" onclick="openMetadataModal('${a.id}')" class="bg-[#0F4C81] text-white px-3 py-1.5 rounded-lg text-xs font-bold">Chi tiết</button>
-              <button type="button" onclick="triggerQuickRelicImageSelect('${a.id}')" class="bg-emerald-600 text-white px-2.5 py-1.5 rounded-lg text-xs font-bold">📷 Đổi ảnh</button>
-              <button type="button" onclick="openCmsToEditRelic('${a.id}')" class="bg-amber-400 text-slate-950 px-2.5 py-1.5 rounded-lg text-xs font-bold">✏️ Sửa</button>
             </td>
           </tr>
         `).join('');
@@ -3997,8 +3328,6 @@
                 <div class="flex items-center gap-1.5 shrink-0">
                   <button type="button" onclick="openComicLightbox(${idx})" class="bg-blue-50 hover:bg-blue-100 text-[#0F4C81] font-bold px-2 py-1 rounded-lg" title="Phóng to đọc rõ">🔍</button>
                   <button type="button" onclick="speakComicPage(${idx}, event)" class="bg-teal-50 hover:bg-teal-100 text-[#0D9488] font-bold px-2 py-1 rounded-lg" title="Nghe đọc trang này">🎙️</button>
-                  <button type="button" onclick="triggerReplaceComicImage(${idx})" class="bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-bold px-2 py-1 rounded-lg" title="Đổi ảnh trang này">📷</button>
-                  <button type="button" onclick="deleteComicItem(${idx})" class="bg-rose-50 hover:bg-rose-100 text-rose-700 font-bold px-2 py-1 rounded-lg" title="Xóa trang">🗑️</button>
                 </div>
               </figcaption>
             </figure>
@@ -4108,12 +3437,6 @@
           <div class="px-5 pb-5 pt-2 flex items-center gap-2 border-t border-slate-100">
             <button type="button" onclick="${idx === 0 ? 'downloadLessonPlanDoc()' : 'downloadFieldWorksheet()'}" class="flex-1 bg-[#0F4C81] hover:bg-blue-900 text-white text-xs sm:text-sm font-bold py-2.5 rounded-xl transition">
               📥 Tải Học Liệu
-            </button>
-            <button type="button" onclick="promptEditKitItem(${idx})" class="bg-amber-100 hover:bg-amber-200 text-amber-900 text-xs font-bold px-3 py-2.5 rounded-xl">
-              ✏️ Sửa
-            </button>
-            <button type="button" onclick="deleteKitItem(${idx})" class="bg-rose-100 hover:bg-rose-200 text-rose-800 text-xs font-bold px-2.5 py-2.5 rounded-xl">
-              🗑️
             </button>
           </div>
         </div>
@@ -4304,14 +3627,7 @@
               <button type="button" onclick="speakText('${escapeHtml(m.title)}. ${escapeHtml(m.story)}', 'vi-VN')" class="text-sm font-bold text-[#0F4C81] hover:underline">
                 🎙️ Nghe đọc tư liệu
               </button>
-              <div class="flex items-center gap-2">
-                <button type="button" onclick="promptEditCoPhapItem(${state.coPhapMemories.indexOf(m)})" class="bg-amber-100 hover:bg-amber-200 text-amber-900 text-xs font-bold px-2.5 py-1 rounded-lg">
-                  ✏️ Sửa mục này
-                </button>
-                <button type="button" onclick="deleteCoPhapItem(${state.coPhapMemories.indexOf(m)})" class="bg-rose-100 hover:bg-rose-200 text-rose-800 text-xs font-bold px-2.5 py-1 rounded-lg">
-                  🗑️ Xóa
-                </button>
-              </div>
+
             </div>
           </div>
         `;
@@ -4588,17 +3904,20 @@
       const a = state.artifacts.find(x => x.id === relicId);
       if (!a) return;
 
-      document.getElementById('cmsRelicFormHeader').textContent = `✏️ Đang Chỉnh Sửa Hiện Vật: [${a.id}]`;
-      document.getElementById('newArtCode').value = a.id;
-      document.getElementById('newArtGroup').value = a.group || (a.id.startsWith('CP') ? 'CP' : 'HA');
-      document.getElementById('newArtName').value = a.name;
-      document.getElementById('newArtType').value = a.type;
-      document.getElementById('newArtEra').value = a.era;
-      document.getElementById('newArtLocation').value = a.location;
-      document.getElementById('newArtCondition').value = a.condition;
-      document.getElementById('newArtDesc').value = a.desc;
-      document.getElementById('newArtSource').value = a.source || "Hồ sơ di tích quốc gia 2014";
-      document.getElementById('newArtRights').value = a.rights || "Học liệu mở phục vụ giáo dục";
+      const hdr = document.getElementById('cmsRelicFormHeader');
+      if (!hdr) return;
+      const setV = (id, v) => { const el = document.getElementById(id); if (el) el.value = v; };
+      hdr.textContent = `✏️ Đang Chỉnh Sửa Hiện Vật: [${a.id}]`;
+      setV('newArtCode', a.id);
+      setV('newArtGroup', a.group || (a.id.startsWith('CP') ? 'CP' : 'HA'));
+      setV('newArtName', a.name);
+      setV('newArtType', a.type);
+      setV('newArtEra', a.era);
+      setV('newArtLocation', a.location);
+      setV('newArtCondition', a.condition);
+      setV('newArtDesc', a.desc);
+      setV('newArtSource', a.source || "Hồ sơ di tích quốc gia 2014");
+      setV('newArtRights', a.rights || "Học liệu mở phục vụ giáo dục");
 
       const delBtn = document.getElementById('btnDeleteRelicCms');
       if (delBtn) delBtn.classList.remove('hidden');
@@ -4606,17 +3925,20 @@
     }
 
     function resetCmsRelicForm() {
+      const hdr = document.getElementById('cmsRelicFormHeader');
+      if (!hdr) return;
       const sel = document.getElementById('cmsSelectExistingRelic');
       if (sel) sel.value = '';
       const nextNum = state.artifacts.length + 1;
-      document.getElementById('cmsRelicFormHeader').textContent = "1. Đẩy Hiện Vật Khảo Cổ Mới / Chỉnh Sửa Chi Tiết";
-      document.getElementById('newArtCode').value = `HA-DT-${nextNum}`;
-      document.getElementById('newArtName').value = '';
-      document.getElementById('newArtType').value = 'Cổ vật khảo cổ';
-      document.getElementById('newArtEra').value = 'Thời Nguyễn';
-      document.getElementById('newArtLocation').value = 'Chùa Hương Ấp, phường Vạn Xuân';
-      document.getElementById('newArtCondition').value = `Tốt; QR: QR-HA-${nextNum}`;
-      document.getElementById('newArtDesc').value = '';
+      const setV = (id, v) => { const el = document.getElementById(id); if (el) el.value = v; };
+      hdr.textContent = "1. Đẩy Hiện Vật Khảo Cổ Mới / Chỉnh Sửa Chi Tiết";
+      setV('newArtCode', `HA-DT-${nextNum}`);
+      setV('newArtName', '');
+      setV('newArtType', 'Cổ vật khảo cổ');
+      setV('newArtEra', 'Thời Nguyễn');
+      setV('newArtLocation', 'Chùa Hương Ấp, phường Vạn Xuân');
+      setV('newArtCondition', `Tốt; QR: QR-HA-${nextNum}`);
+      setV('newArtDesc', '');
       const delBtn = document.getElementById('btnDeleteRelicCms');
       if (delBtn) delBtn.classList.add('hidden');
     }
@@ -5733,10 +5055,11 @@
       document.getElementById('footerSchoolName').textContent = state.siteConfig.schoolName;
       document.getElementById('heroHeading').textContent = state.siteConfig.heroHeading;
 
-      document.getElementById('bldSiteTitle').value = state.siteConfig.title;
-      document.getElementById('bldSiteSlogan').value = state.siteConfig.slogan;
-      document.getElementById('bldSchoolName').value = state.siteConfig.schoolName;
-      document.getElementById('bldHeroHeading').value = state.siteConfig.heroHeading;
+      const setBld = (id, v) => { const el = document.getElementById(id); if (el) el.value = v; };
+      setBld('bldSiteTitle', state.siteConfig.title);
+      setBld('bldSiteSlogan', state.siteConfig.slogan);
+      setBld('bldSchoolName', state.siteConfig.schoolName);
+      setBld('bldHeroHeading', state.siteConfig.heroHeading);
 
       if (state.siteConfig.customBannerImg) {
         const hb = document.getElementById('heroBannerImg');
@@ -5959,6 +5282,8 @@
     }
 
     function toggleLiveInlineEditMode() {
+      isLiveEditMode = false;
+      return;
       isLiveEditMode = !isLiveEditMode;
       const banner = document.getElementById('liveEditFloatingBanner');
       const btn = document.getElementById('btnToggleLiveEdit');
@@ -5986,6 +5311,7 @@
     }
 
     function enableContentEditableAcrossApp(enable) {
+      return;
       const selectors = [
         'header h1', 'header p', '#topSchoolName', '#headerSchoolBadge',
         'nav button span:last-child',
