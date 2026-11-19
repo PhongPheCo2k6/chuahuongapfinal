@@ -1,0 +1,655 @@
+{
+ "updatedAt": 1794847517725,
+ "siteConfig": {
+  "title": "KHO HỌC LIỆU SỐ & BẢN ĐỒ DI SẢN CHÙA HƯƠNG ẤP (VẠN XUÂN TỰ)",
+  "slogan": "Phục vụ Giáo dục Lịch sử Địa phương & Bảo tồn Di tích Quốc gia – Trường THCS Phổ Yên, Thái Nguyên",
+  "schoolName": "TRƯỜNG THCS PHỔ YÊN – THÀNH PHỐ PHỔ YÊN, TỈNH THÁI NGUYÊN",
+  "researchGroup": "Nhóm Nghiên cứu Khoa học Kỹ thuật Trường THCS Phổ Yên (2026 - 2027)",
+  "heroHeading": "Đức Vua Lý Nam Đế & Hơn 10 Năm Tu Học",
+  "customBannerImg": null,
+  "customSteleImg": null,
+  "customStudentAudioUrl": null,
+  "prefaceVi": "Kính thưa Ban Giám khảo, quý thầy cô giáo và các bạn học sinh! Chúng em là nhóm học sinh nghiên cứu Khoa học Kỹ thuật của Trường Trung học cơ sở Phổ Yên, tỉnh Thái Nguyên. Hôm nay, chúng em xin thuyết minh về Hệ sinh thái Kho học liệu số và Bản đồ di sản tương tác Chùa Hương Ấp (tên chữ là Vạn Xuân Tự) tại phường Vạn Xuân, thành phố Phổ Yên. Đây là ngôi cổ tự gắn liền với hơn 10 năm tuổi thơ tu học của Đức vua Lý Nam Đế dưới sự dạy dỗ của Pháp Tổ Thiền sư, trước khi Ngài phất cờ khởi nghĩa năm 542 và lập nên nhà nước Vạn Xuân độc lập vào mùa xuân năm 544."
+ },
+ "menuLabels": {
+  "nav_home": "Trang Chủ Động",
+  "nav_cat2": "2. Các Hiện Vật Khảo Cổ",
+  "nav_cat1": "3. Kể Chuyện Lịch Sử",
+  "nav_cat4": "4. Bảo Tồn Ký Ức & Tri Thức Cộng Đồng",
+  "nav_cat5": "5. Kết Quả Thực Nghiệm",
+  "st_anim": "1. Phim Hoạt Hình",
+  "st_comic": "2. Truyện Tranh Số",
+  "st_map": "3. Bản Đồ Tương Tác",
+  "st_kit": "3. Bộ Học Liệu Trải Nghiệm",
+  "st_quiz": "4. Trò Chơi Trắc Nghiệm",
+  "mem_compare": "🌓 1. Kho Tư Liệu Đối Chiếu Xưa Và Nay",
+  "mem_cophap": "🌾 2. Góc Ký Ức Làng Cổ Pháp",
+  "mem_comm": "🤝 3. Không Gian Đóng Góp Tư Liệu Cộng Đồng",
+  "arch_relics": "🏺 Các Hiện Vật Khảo Cổ",
+  "arch_stele": "📜 Văn Bia Đối Chiếu 3 Cột (HA-VB-01)"
+ },
+ "artifacts": [
+  {
+   "id": "HA-KT-02",
+   "name": "Tường bao gạch đá ong cổ",
+   "type": "Kiến trúc",
+   "era": "Thế kỷ XVII - XIX",
+   "location": "Bao quanh khuôn viên",
+   "condition": "Rêu phong cổ kính",
+   "qr": "",
+   "group": "HA",
+   "desc": "Hệ thống tường gạch đá ong cổ đặc trưng vùng trung du Phổ Yên - Thái Nguyên, kết cấu lỗ tổ ong bền vững qua nhiều thế kỷ.",
+   "source": "Hồ sơ di tích quốc gia 2014",
+   "rights": "Học liệu mở phục vụ giáo dục",
+   "img": "./assets/images/artifacts-ha-kt-02.webp",
+   "customImgUpdated": true
+  },
+  {
+   "id": "HA-TP-03",
+   "name": "Bộ tượng Tam Thế Phật",
+   "type": "Tượng gỗ",
+   "era": "Thời Nguyễn",
+   "location": "Chính điện Tam Bảo",
+   "condition": "Sơn son thếp vàng",
+   "qr": "",
+   "group": "HA",
+   "desc": "Bộ ba pho tượng Tam Thế Phật (Quá khứ - Hiện tại - Vị lai) chạm khắc gỗ mít sơn son thếp vàng uy nghiêm tại thượng điện.",
+   "source": "Hồ sơ di tích quốc gia 2014",
+   "rights": "Học liệu mở phục vụ giáo dục",
+   "img": "./assets/images/artifacts-ha-tp-03.webp",
+   "customImgUpdated": true
+  },
+  {
+   "id": "HA-TP-05",
+   "name": "Tượng Quan Âm Chuẩn Đề",
+   "type": "Tượng gỗ",
+   "era": "Thời Nguyễn",
+   "location": "Chính điện",
+   "condition": "Tốt",
+   "qr": "",
+   "group": "HA",
+   "desc": "Tượng Bồ Tát Quan Âm Chuẩn Đề nhiều tay biểu trưng cho năng lực cứu độ chúng sinh, chạm khắc tinh xảo.",
+   "source": "Hồ sơ di tích quốc gia 2014",
+   "rights": "Học liệu mở phục vụ giáo dục",
+   "img": "./assets/images/artifacts-ha-tp-05.webp",
+   "customImgUpdated": true
+  },
+  {
+   "id": "HA-TP-06",
+   "name": "Tượng Đức Ông (Cấp Cô Độc)",
+   "type": "Tượng gỗ",
+   "era": "Thời Nguyễn",
+   "location": "Gian tả chính điện",
+   "condition": "Tốt",
+   "qr": "",
+   "group": "HA",
+   "desc": "Tượng Đức Ông Cấp Cô Độc đặt tại gian tả tiền đường, biểu tượng hộ trì Tam Bảo.",
+   "source": "Hồ sơ di tích quốc gia 2014",
+   "rights": "Học liệu mở phục vụ giáo dục",
+   "img": "./assets/images/artifacts-ha-tp-06.webp",
+   "customImgUpdated": true
+  },
+  {
+   "id": "HA-TP-08",
+   "name": "Tượng Hộ Pháp Khuyến Thiện",
+   "type": "Tượng đất mộc",
+   "era": "Thế kỷ XIX",
+   "location": "Tiền đường",
+   "condition": "Tốt",
+   "qr": "",
+   "group": "HA",
+   "desc": "Tượng Kim Cương Hộ Pháp Khuyến Thiện đắp bằng đất luyện cổ truyền, nét mặt hiền hòa khuyên người hướng thiện.",
+   "source": "Hồ sơ di tích quốc gia 2014",
+   "rights": "Học liệu mở phục vụ giáo dục",
+   "img": "./assets/images/artifacts-ha-tp-08.webp",
+   "customImgUpdated": true
+  },
+  {
+   "id": "HA-TP-09",
+   "name": "Tượng Hộ Pháp Trừng Ác",
+   "type": "Tượng đất mộc",
+   "era": "Thế kỷ XIX",
+   "location": "Tiền đường",
+   "condition": "Tốt",
+   "qr": "",
+   "group": "HA",
+   "desc": "Tượng Kim Cương Hộ Pháp Trừng Ác đắp đất mộc thế kỷ XIX, oai phong lẫm liệt răn đe điều ác.",
+   "source": "Hồ sơ di tích quốc gia 2014",
+   "rights": "Học liệu mở phục vụ giáo dục",
+   "img": "./assets/images/artifacts-ha-tp-09.webp",
+   "customImgUpdated": true
+  },
+  {
+   "id": "HA-TP-11",
+   "name": "Tượng Vua Lý Nam Đế",
+   "type": "Tượng thờ",
+   "era": "Phục dựng cung kính",
+   "location": "Nhà Tổ / Đền thờ",
+   "condition": "Tốt",
+   "qr": "",
+   "group": "HA",
+   "desc": "Tượng thờ Đức vua Lý Nam Đế (Lý Bí) trong trang phục Hoàng đế Vạn Xuân, thể hiện đạo lý uống nước nhớ nguồn.",
+   "source": "Hồ sơ di tích quốc gia 2014",
+   "rights": "Học liệu mở phục vụ giáo dục",
+   "img": "./assets/images/artifacts-ha-tp-11.webp",
+   "customImgUpdated": true
+  },
+  {
+   "id": "HA-CD-12",
+   "name": "Đại hồng chung (Chuông đồng)",
+   "type": "Pháp khí",
+   "era": "Thời Nguyễn (Tự Đức)",
+   "location": "Gác chuông chùa",
+   "condition": "Âm vang chuẩn",
+   "qr": "",
+   "group": "HA",
+   "desc": "Quả chuông đồng lớn đúc dưới triều vua Tự Đức, thân chuông khắc bài minh ca ngợi cảnh đẹp Vạn Xuân Tự.",
+   "source": "Hồ sơ di tích quốc gia 2014",
+   "rights": "Học liệu mở phục vụ giáo dục",
+   "img": "./assets/images/artifacts-ha-cd-12.webp",
+   "customImgUpdated": true
+  },
+  {
+   "id": "HA-CD-13",
+   "name": "Khánh đồng cổ",
+   "type": "Pháp khí",
+   "era": "Thời Nguyễn",
+   "location": "Chính điện",
+   "condition": "Tốt",
+   "qr": "",
+   "group": "HA",
+   "desc": "Chiếc khánh đồng hình bán nguyệt chạm hoa văn mây rồng, dùng trong các khóa lễ trọng đại của chùa.",
+   "source": "Hồ sơ di tích quốc gia 2014",
+   "rights": "Học liệu mở phục vụ giáo dục",
+   "img": "./assets/images/artifacts-ha-cd-13.webp",
+   "customImgUpdated": true
+  },
+  {
+   "id": "HA-KC-01",
+   "name": "Nồi đồng cổ",
+   "type": "Đồ đồng",
+   "era": "Đang giám định",
+   "location": "Phòng truyền thống chùa Hương Ấp",
+   "condition": "Gỉ đồng xanh lốm đốm, miệng loe",
+   "qr": "",
+   "group": "HA",
+   "desc": "Chiếc nồi đồng cổ thân phình, miệng loe, bề mặt phủ lớp gỉ đồng xanh do thời gian, được lưu giữ tại chùa Hương Ấp.",
+   "source": "Sưu tập hiện vật chùa Hương Ấp",
+   "rights": "Học liệu mở phục vụ giáo dục",
+   "img": "hien_vat_ha/noi_dong.jpg"
+  },
+  {
+   "id": "HA-KC-02",
+   "name": "Bộ bát, đĩa gốm cổ",
+   "type": "Đồ gốm",
+   "era": "Đang giám định",
+   "location": "Phòng truyền thống chùa Hương Ấp",
+   "condition": "Một số hiện vật bị mẻ, vỡ",
+   "qr": "",
+   "group": "HA",
+   "desc": "Bộ bát, đĩa gốm men lam, men trắng ngà và men nâu với nhiều họa tiết khác nhau, một số chiếc còn dấu chồng nung dưới lòng.",
+   "source": "Sưu tập hiện vật chùa Hương Ấp",
+   "rights": "Học liệu mở phục vụ giáo dục",
+   "img": "hien_vat_ha/bat_dia_gom.jpg"
+  },
+  {
+   "id": "HA-KC-03",
+   "name": "Đĩa gốm men lam và men nâu",
+   "type": "Đồ gốm",
+   "era": "Đang giám định",
+   "location": "Phòng truyền thống chùa Hương Ấp",
+   "condition": "Tốt",
+   "qr": "",
+   "group": "HA",
+   "desc": "Hai chiếc đĩa gốm nhỏ: một đĩa men trắng vẽ lam – tím, một đĩa men nâu sẫm có vết mẻ ở miệng.",
+   "source": "Sưu tập hiện vật chùa Hương Ấp",
+   "rights": "Học liệu mở phục vụ giáo dục",
+   "img": "hien_vat_ha/dia_nho.jpg"
+  },
+  {
+   "id": "HA-KC-04",
+   "name": "Bình gốm men rạn có lỗ tròn",
+   "type": "Đồ gốm",
+   "era": "Đang giám định",
+   "location": "Phòng truyền thống chùa Hương Ấp",
+   "condition": "Men rạn, nguyên vẹn",
+   "qr": "",
+   "group": "HA",
+   "desc": "Chiếc bình gốm men rạn thân tròn, đắp nổi các cụm hoa quả trang trí và khoét một lỗ tròn ở thân; đi kèm phần nắp nhỏ.",
+   "source": "Sưu tập hiện vật chùa Hương Ấp",
+   "rights": "Học liệu mở phục vụ giáo dục",
+   "img": "hien_vat_ha/binh_gom_lo_tron.jpg"
+  },
+  {
+   "id": "HA-KC-05",
+   "name": "Mảnh lư gốm men nâu ba chân",
+   "type": "Đồ gốm",
+   "era": "Đang giám định",
+   "location": "Phòng truyền thống chùa Hương Ấp",
+   "condition": "Mảnh vỡ",
+   "qr": "",
+   "group": "HA",
+   "desc": "Mảnh lư gốm men nâu có ba chân, thân trang trí băng hoa văn chữ triện (hồi văn) và các mảng hoa văn mây cuộn.",
+   "source": "Sưu tập hiện vật chùa Hương Ấp",
+   "rights": "Học liệu mở phục vụ giáo dục",
+   "img": "hien_vat_ha/lu_gom_men_nau.jpg"
+  },
+  {
+   "id": "HA-KC-06",
+   "name": "Sưu tập rìu đá",
+   "type": "Rìu đá khảo cổ",
+   "era": "Đang giám định",
+   "location": "Phòng truyền thống chùa Hương Ấp",
+   "condition": "Nhiều tiêu bản, đã đánh số",
+   "qr": "",
+   "group": "HA",
+   "desc": "Bộ sưu tập rìu, bôn đá nhiều kích cỡ và màu sắc, được mài nhẵn phần lưỡi – minh chứng cư dân cổ từng sinh sống trên vùng đất này.",
+   "source": "Sưu tập hiện vật chùa Hương Ấp",
+   "rights": "Học liệu mở phục vụ giáo dục",
+   "img": "hien_vat_ha/riu_da.jpg"
+  },
+  {
+   "id": "HA-KC-07",
+   "name": "Rìu đồng cổ",
+   "type": "Đồ đồng",
+   "era": "Đang giám định",
+   "location": "Phòng truyền thống chùa Hương Ấp",
+   "condition": "Một chiếc nguyên vẹn, một chiếc gãy",
+   "qr": "",
+   "group": "HA",
+   "desc": "Hai tiêu bản rìu đồng cổ phủ gỉ xanh: một chiếc có họng tra cán, một chiếc lưỡi xéo bị gãy.",
+   "source": "Sưu tập hiện vật chùa Hương Ấp",
+   "rights": "Học liệu mở phục vụ giáo dục",
+   "img": "hien_vat_ha/riu_dong.jpg"
+  },
+  {
+   "id": "HA-KC-08",
+   "name": "Toàn cảnh sưu tập hiện vật khảo cổ",
+   "type": "Sưu tập",
+   "era": "Đang giám định",
+   "location": "Phòng truyền thống chùa Hương Ấp",
+   "condition": "Trưng bày trên bàn gỗ",
+   "qr": "",
+   "group": "HA",
+   "desc": "Toàn bộ sưu tập hiện vật khảo cổ tại chùa Hương Ấp gồm nồi đồng, đồ gốm, bát đĩa, rìu đá và rìu đồng được trưng bày trên bàn gỗ.",
+   "source": "Sưu tập hiện vật chùa Hương Ấp",
+   "rights": "Học liệu mở phục vụ giáo dục",
+   "img": "hien_vat_ha/suu_tap_tong_quan.jpg"
+  },
+  {
+   "id": "HA-KC-09",
+   "name": "Cổng chùa Hương Ấp",
+   "type": "Kiến trúc",
+   "era": "Đang cập nhật",
+   "location": "Lối vào chùa Hương Ấp",
+   "condition": "Tốt",
+   "qr": "",
+   "group": "HA",
+   "desc": "Cổng tam quan sơn vàng ghi chữ 'Chùa Hương Ấp – Giáo hội Phật giáo Việt Nam', hai bên có câu đối chữ Việt.",
+   "source": "Ảnh tư liệu chùa Hương Ấp",
+   "rights": "Học liệu mở phục vụ giáo dục",
+   "img": "hien_vat_ha/cong_chua.jpg"
+  }
+ ],
+ "animations": [
+  {
+   "id": "ANIM-01",
+   "title": "Tập 1: Cậu Bé Lý Bí & Hơn 10 Năm Tu Học Tại Chùa Hương Ấp",
+   "duration": "03:30",
+   "poster": "./assets/images/animations-anim-01-poster.jpg",
+   "videoDataUrl": null,
+   "script": "Năm 503 tại làng Cổ Pháp (nay thuộc phường Vạn Xuân, TP. Phổ Yên), cậu bé Lý Bí khôi ngô tuấn tú ra đời. Sớm mồ côi cha mẹ, Lý Bí được Pháp Tổ Thiền sư trụ trì Chùa Hương Ấp đón về nuôi dưỡng, truyền dạy kinh sử và võ nghệ suốt hơn 10 năm.",
+   "videoUrl": "Phim%20ho%E1%BA%A1t%20h%C3%ACnh-%20Kh%E1%BB%9Fi%20ngh%C4%A9a%20L%C3%BD%20B%C3%AD%20n%C4%83m%20542%20-%20YouTube.mp4"
+  },
+  {
+   "id": "ANIM-02",
+   "title": "Tập 2: Thao Trường Cánh Đồng Tráng & Khởi Nghĩa Mùa Xuân Năm 542",
+   "duration": "04:15",
+   "poster": "./assets/images/animations-anim-02-poster.jpg",
+   "videoDataUrl": null,
+   "script": "Trưởng thành với tài văn võ song toàn, Lý Bí liên kết hào kiệt khắp nơi, tập hợp trai tráng luyện tập binh đao tại Cánh Đồng Tráng và phất cờ khởi nghĩa đánh đuổi Thứ sử Tiêu Tư nhà Lương vào mùa xuân năm 542.",
+   "videoUrl": "Phim%20ho%E1%BA%A1t%20h%C3%ACnh-%20Kh%E1%BB%9Fi%20ngh%C4%A9a%20L%C3%BD%20B%C3%AD%20n%C4%83m%20542%20-%20YouTube_1.mp4"
+  },
+  {
+   "id": "ANIM-03",
+   "title": "Tập 3: Mùa Xuân Năm 544 – Lên Ngôi Hoàng Đế & Dựng Nước Vạn Xuân",
+   "duration": "04:00",
+   "poster": "./assets/images/animations-anim-03-poster.jpg",
+   "videoDataUrl": null,
+   "script": "Sau khi đánh tan quân Lương xâm lược, tháng Giêng năm 544, Lý Bí chính thức lên ngôi Hoàng đế (Lý Nam Đế), đặt quốc hiệu Vạn Xuân với ước vọng đất nước trường tồn muôn mùa xuân, niên hiệu Thiên Đức.",
+   "videoUrl": "Phim%20ho%E1%BA%A1t%20h%C3%ACnh-%20Kh%E1%BB%9Fi%20ngh%C4%A9a%20L%C3%BD%20B%C3%AD%20n%C4%83m%20542%20-%20YouTube_2.mp4"
+  }
+ ],
+ "comics": [
+  {
+   "id": "LB-01",
+   "pageNumber": "Trang bìa",
+   "title": "Lý Bí và sự hình thành Nhà nước Vạn Xuân",
+   "img": "truyen_tranh/01_bia.jpg",
+   "caption": "Truyện tranh lịch sử: Lý Bí và sự hình thành Nhà nước Vạn Xuân. Lời: Lương Duyên, Nguyên Thi. Tranh: Khắc Khoan, Hồng Trâm, Duy Thái. Nhà xuất bản Giáo dục Việt Nam."
+  },
+  {
+   "id": "LB-02",
+   "pageNumber": "Trang 04",
+   "title": "Tiểu sử Lý Bí (? - 548)",
+   "img": "truyen_tranh/02_trang_04.jpg",
+   "caption": "Lý Bí quê ở huyện Thái Bình (Sơn Tây, Hà Nội). Đầu thế kỷ VI, nhà Lương đô hộ Giao Châu, thiết lập chính sách cai trị hà khắc, đẩy người dân vào cảnh lầm than. Tháng Giêng năm 542, Lý Bí khởi binh chống nhà Lương, chiếm thành Long Biên. Đầu năm 544, Lý Bí lên ngôi hoàng đế (Lý Nam Đế), đặt niên hiệu Thiên Đức, đặt tên nước là Vạn Xuân. Năm 545, vua Lương cho quân tái chiếm Vạn Xuân, Lý Nam Đế rút về động Khuất Lão, giao binh quyền lại cho Triệu Quang Phục. Năm 548, Lý Nam Đế băng hà, ở ngôi được 5 năm."
+  },
+  {
+   "id": "LB-03",
+   "pageNumber": "Trang 05",
+   "title": "Nhà Lương đô hộ và chia cắt nước ta",
+   "img": "truyen_tranh/03_trang_05.jpg",
+   "caption": "Đầu thế kỷ VI, nhà Lương đô hộ nước ta. Chúng chia nước ta thành: Giao Châu (đồng bằng và trung du Bắc Bộ); Ái Châu (Thanh Hóa); Đức Châu, Lợi Châu, Minh Châu (Nghệ An và Hà Tĩnh) và Hoàng Châu (Quảng Ninh)."
+  },
+  {
+   "id": "LB-04",
+   "pageNumber": "Trang 06",
+   "title": "Chính sách cai trị tàn bạo của nhà Lương",
+   "img": "truyen_tranh/04_trang_06.jpg",
+   "caption": "Nhà Lương thiết lập chính sách cai trị tàn bạo, hà khắc. Bọn chúng đặt ra hàng trăm thứ thuế, đẩy người dân vào cảnh lầm than. Nỗi oán hận, căm hờn của nhân dân ta đối với bè lũ đô hộ dâng lên đến đỉnh điểm."
+  },
+  {
+   "id": "LB-05",
+   "pageNumber": "Trang 07",
+   "title": "Thứ sử Tiêu Tư tàn bạo mất lòng dân",
+   "img": "truyen_tranh/05_trang_07.jpg",
+   "caption": "Thứ sử Giao Châu bấy giờ là Tiêu Tư đã áp dụng chế độ tôn thất sĩ tộc, phân biệt đẳng cấp, khinh rẻ người Việt. Sử cũ của Trung Quốc cũng phải thừa nhận: Tiêu Tư tàn bạo mất lòng dân. Vì thế, xung đột trong giới quý tộc Việt - Lương diễn ra gay gắt, châm ngòi cho cuộc khởi nghĩa của Lý Bí."
+  },
+  {
+   "id": "LB-06",
+   "pageNumber": "Trang 08",
+   "title": "Thủ lĩnh Lý Bí từ quan về quê ở ẩn",
+   "img": "truyen_tranh/06_trang_08.jpg",
+   "caption": "Thủ lĩnh Lý Bí xuất thân từ một hào trưởng địa phương, quê ở Thái Bình (Sơn Tây, Hà Nội). Ông là người học rộng, hiểu sâu, văn võ song toàn. Ông từng giữ chức chỉ huy quân đội ở Đức Châu (nam Nghệ An - Hà Tĩnh). Vì bất bình với bè lũ đô hộ nên Lý Bí từ quan về quê ở ẩn."
+  },
+  {
+   "id": "LB-07",
+   "pageNumber": "Trang 09",
+   "title": "Quê hương vùng lưu vực sông Hồng",
+   "img": "truyen_tranh/07_trang_09.jpg",
+   "caption": "Quê hương Lý Bí thuộc lưu vực sông Hồng, quanh năm phù sa màu mỡ. Từ xa xưa, nơi đây vốn là cội nguồn của nền văn minh lúa nước."
+  },
+  {
+   "id": "LB-08",
+   "pageNumber": "Trang 10",
+   "title": "Lý Bí bí mật chiêu mộ binh sĩ",
+   "img": "truyen_tranh/08_trang_10.jpg",
+   "caption": "Chứng kiến cảnh nhân dân cơ cực, căm hận bọn bất lương, Lý Bí bí mật chiêu mộ binh sĩ, ngày đêm luyện tập võ nghệ, chờ thời cơ dấy binh khởi nghĩa."
+  },
+  {
+   "id": "LB-09",
+   "pageNumber": "Trang 11",
+   "title": "Tinh Thiều cùng Lý Bí mưu việc dấy binh",
+   "img": "truyen_tranh/09_trang_11.jpg",
+   "caption": "Cùng quê Lý Bí có Tinh Thiều giỏi văn chương, lại tinh thông binh pháp, nhưng không được trọng dụng. Tinh Thiều phẫn chí, uất hận, than rằng: Dùi mài kinh sử cả một đời vậy mà chỉ để gác cổng thành cho bọn ngoại bang. Thật đáng hổ thẹn! Rồi sau đó, Tinh Thiều bỏ về quê, quyết chí cùng Lý Bí mưu việc dấy binh."
+  },
+  {
+   "id": "LB-10",
+   "pageNumber": "Trang 12",
+   "title": "Kết giao hào kiệt các châu",
+   "img": "truyen_tranh/10_trang_12.jpg",
+   "caption": "Thời cơ đã tới nhưng do chưa thuận lòng dân, Lý Bí tìm cách kết giao với hào kiệt các châu. Chưa đầy một tháng thì Triệu Túc - thủ lĩnh Chu Diên, và con là Triệu Quang Phục, đã dẫn quân đến. Tướng Phạm Tu - nổi tiếng chinh chiến sa trường, cũng tìm về đầu quân."
+  },
+  {
+   "id": "LB-11",
+   "pageNumber": "Trang 13",
+   "title": "Nghĩa quân mở trận đầu, vây thành Long Biên",
+   "img": "truyen_tranh/11_trang_13.jpg",
+   "caption": "Tháng Giêng năm 542, nghĩa quân mở trận đầu, đánh chiếm các vùng địa phương nhằm thu phục lòng người. Khi lực đã mạnh, nghĩa quân liền tiến công, phất cờ hiệu bao vây thành Long Biên (Bắc Ninh)."
+  }
+ ],
+ "mapPois": [
+  {
+   "id": "poi-1",
+   "name": "1. Chùa Hương Ấp (Vạn Xuân Tự)",
+   "lat": 21.4182,
+   "lng": 105.9015,
+   "badge": "Di tích Lịch sử Quốc gia",
+   "desc": "Nơi cậu bé Lý Bí ở và tu học hơn 10 năm dưới sự dạy dỗ của Pháp Tổ Thiền sư.",
+   "digital": "Ảnh tường đá ong, thuyết minh học sinh, liên kết kho hiện vật khảo cổ."
+  },
+  {
+   "id": "poi-2",
+   "name": "2. Đền Mục (Đền Lý Nam Đế)",
+   "lat": 21.4125,
+   "lng": 105.898,
+   "badge": "Di tích Lịch sử Quốc gia",
+   "desc": "Nơi tôn thờ chính Đức vua Lý Nam Đế trên quê hương phường Vạn Xuân.",
+   "digital": "Ảnh kiến trúc đền, âm thanh lịch sử khởi nghĩa 544, câu hỏi ôn tập."
+  },
+  {
+   "id": "poi-3",
+   "name": "3. Núi Khao Vương",
+   "lat": 21.425,
+   "lng": 105.912,
+   "badge": "Địa danh lịch sử",
+   "desc": "Ngọn núi nơi vua tổ chức khao thưởng ba quân tướng sĩ sau chiến thắng giặc Lương.",
+   "digital": "Ảnh toàn cảnh đỉnh núi, tư liệu truyền thuyết địa phương."
+  },
+  {
+   "id": "poi-4",
+   "name": "4. Cánh Đồng Tráng",
+   "lat": 21.416,
+   "lng": 105.894,
+   "badge": "Địa danh lịch sử",
+   "desc": "Bình nguyên nơi Lý Bí tập hợp trai tráng vùng Cổ Pháp luyện tập võ nghệ, binh đao.",
+   "digital": "Ảnh khảo sát thực địa, bài giảng lịch sử giáo dục địa phương."
+  },
+  {
+   "id": "poi-5",
+   "name": "5. Giếng Ngọc & Chùa Mãn Tăng",
+   "lat": 21.409,
+   "lng": 105.905,
+   "badge": "Cảnh quan di sản",
+   "desc": "Mạch nước thiêng nghìn năm và ngôi chùa cổ phụ cận gắn với sinh hoạt tuổi thơ Đức vua.",
+   "digital": "Ảnh giếng cổ, tư liệu phỏng vấn cụ từ làng Cổ Pháp."
+  },
+  {
+   "id": "poi-6",
+   "name": "6. Trường THCS Phổ Yên",
+   "lat": 21.414,
+   "lng": 105.885,
+   "badge": "Không gian giáo dục",
+   "desc": "Trung tâm nghiên cứu, kết nối và tổ chức các hành trình trải nghiệm di sản học đường.",
+   "digital": "Kế hoạch bài dạy trải nghiệm, báo cáo thực nghiệm sư phạm."
+  }
+ ],
+ "experientialKits": [
+  {
+   "id": "KIT-01",
+   "title": "Kế Hoạch Bài Dạy (Giáo Án Số Hóa) Lịch Sử Địa Phương Lớp 7",
+   "type": "Giáo án chuẩn CV 5512",
+   "img": "./assets/images/animations-anim-02-poster.jpg",
+   "desc": "Thiết kế hoạt động dạy học trải nghiệm tại Chùa Hương Ấp gắn với chủ đề Khởi nghĩa Lý Bí và sự ra đời nhà nước Vạn Xuân."
+  },
+  {
+   "id": "KIT-03",
+   "title": "Bộ Thẻ Flashcard Khám Phá Di Vật Khảo Cổ Làng Cổ Pháp",
+   "type": "Học liệu trực quan",
+   "img": "./assets/images/animations-anim-01-poster.jpg",
+   "desc": "Bộ thẻ học tập tương tác giúp học sinh nhận diện 15 rìu đá tiền sử, 02 rìu đồng Đông Sơn và hệ thống tượng thờ tại Vạn Xuân Tự."
+  }
+ ],
+ "comparePairs": [
+  {
+   "id": "CMP-LB",
+   "title": "Tượng Lý Bí xưa và nay",
+   "desc": "Đối chiếu pho tượng thờ Lý Bí (Lý Nam Đế) trước đây và hiện nay tại di tích.",
+   "beforeImg": "tuong_ly_bi_xua.jpg",
+   "afterImg": "tuong_ly_bi_nay.jpg"
+  },
+  {
+   "id": "CMP-03",
+   "title": "Chùa Hương Ấp xưa và nay",
+   "desc": "Cặp tư liệu đối chiếu Xưa và Nay được giáo viên, học sinh và nhân dân cập nhật vào Kho học liệu số Chùa Hương Ấp.",
+   "beforeImg": "./assets/images/comparepairs-cmp-03-beforeimg.webp",
+   "afterImg": "./assets/images/comparepairs-cmp-03-afterimg.webp"
+  },
+  {
+   "id": "CMP-03",
+   "title": "Không Gian Thờ Tự Pháp Tổ Thiền Sư & Đức Vua Lý Nam Đế",
+   "desc": "Sự tiếp nối mạch nguồn tri ân từ ngôi Tổ đường cổ kính đến quần thể Di tích Quốc gia 54,06 ha tại phường Vạn Xuân, TP. Phổ Yên.",
+   "beforeImg": "./assets/images/comparepairs-cmp-03-beforeimg-2.webp",
+   "afterImg": "./assets/images/comparepairs-cmp-03-afterimg-2.webp"
+  }
+ ],
+ "coPhapMemories": [
+  {
+   "id": "CPM-04",
+   "title": "Lời kể về làng cổ pháp",
+   "narrator": "Người dân sống lâu năm tại làng",
+   "story": "Tư liệu ký ức do Người dân sống lâu năm tại làng cung cấp và đóng góp vào Kho học liệu số.",
+   "mediaType": "video",
+   "mediaUrl": "./assets/videos/cophapmemories-cpm-04-mediaurl.mp4"
+  },
+  {
+   "id": "CPM-01",
+   "title": "Ký Ức Về Mạch Nước Thiêng Giếng Ngọc & Tuổi Thơ Đức Vua Lý Bí",
+   "narrator": "Cụ Từ & Các bậc cao niên xóm Định Thành, phường Vạn Xuân",
+   "story": "Từ bao đời nay, người dân làng Cổ Pháp vẫn gìn giữ câu chuyện truyền miệng về cậu bé Lý Bí mỗi sáng gánh nước từ Giếng Ngọc về Chùa Hương Ấp hầu Phật và học chữ cùng Pháp Tổ Thiền sư. Mạch nước đá ong quanh năm trong vắt, mùa hạn không bao giờ cạn.",
+   "mediaType": "image",
+   "mediaUrl": "./assets/images/animations-anim-02-poster.jpg"
+  },
+  {
+   "id": "CPM-02",
+   "title": "Chuyện Kể Dân Gian Về Cánh Đồng Tráng & Lễ Hội Đền Mục – Hương Ấp",
+   "narrator": "Các cụ cao niên Ban Khánh tiết Di tích Quốc gia",
+   "story": "Hằng năm vào dịp lễ hội truyền thống tháng Giêng và ngày 12 tháng 9 âm lịch (ngày sinh Đức vua Lý Nam Đế), nhân dân vùng Cổ Pháp lại tổ chức rước lễ giữa Đền Mục và Chùa Hương Ấp, ôn lại hào khí trai tráng luyện quân trên Cánh Đồng Tráng năm xưa.",
+   "mediaType": "image",
+   "mediaUrl": "./assets/images/animations-anim-01-poster.jpg"
+  },
+  {
+   "id": "CPM-03",
+   "title": "Hành Trình Nhân Dân Làng Cổ Pháp Gìn Giữ 26 Di Vật Khảo Cổ",
+   "narrator": "Nhân dân địa phương hiến tặng & sưu tầm",
+   "story": "Trong quá trình canh tác và đào ao làm vườn tại vùng đất Cổ Pháp, bà con nhân dân đã phát hiện 15 chiếc rìu đá tiền sử, 2 chiếc rìu đồng Đông Sơn cùng nhiều đĩa sứ, bình vôi cổ và tự nguyện hiến tặng để lưu giữ làm minh chứng lịch sử cho thế hệ trẻ.",
+   "mediaType": "image",
+   "mediaUrl": "./assets/images/cophapmemories-cpm-03-mediaurl.jpg"
+  }
+ ],
+ "quizQuestions": [
+  {
+   "q": "Theo văn bia cổ lưu giữ tại sân Chùa Hương Ấp (Mã định danh: HA-VB-01), tên gọi chính thức của tấm bia đá thời Nguyễn này là gì?",
+   "options": [
+    "Bia đá 'Bản giáp hậu bi ký'",
+    "Bia đá 'Vạn Xuân khai quốc bi'",
+    "Bia đá 'Cổ Pháp thiền tự bi'",
+    "Bia đá 'Thiên Đức vạn đại bi'"
+   ],
+   "correct": 0,
+   "citeCode": "HA-VB-01",
+   "gapTopic": "Các Hiện Vật Khảo Cổ - Văn bia Hán-Nôm",
+   "gapAdvice": "Theo hồ sơ học liệu số mã HA-VB-01, tấm bia đá cổ thời Nguyễn tại sân chùa Hương Ấp có tên là 'Bản giáp hậu bi ký' (QR: QR-HA-01), ghi chép công đức tu bổ chùa của bản giáp."
+  },
+  {
+   "q": "Thuở nhỏ mồ côi cha mẹ, cậu bé Lý Bí được vị cao tăng nào đón về Chùa Hương Ấp nuôi dưỡng hơn 10 năm (hiện được tôn thờ tại Nhà Tổ với mã hiện vật HA-TP-10)?",
+   "options": [
+    "Pháp Tổ Thiền Sư",
+    "Thiền sư Vạn Hạnh",
+    "Khuông Việt Đại Sư",
+    "Thiền sư Mãn Giác"
+   ],
+   "correct": 0,
+   "citeCode": "HA-TP-10",
+   "gapTopic": "Lịch sử Vạn Xuân Tự & Hiện vật HA-TP-10",
+   "gapAdvice": "Hồ sơ hiện vật HA-TP-10 (Tượng Pháp Tổ Thiền Sư tại Nhà Tổ Chùa Hương Ấp) ghi rõ Ngài là người trực tiếp nuôi dưỡng và truyền dạy văn võ cho Lý Bí suốt hơn 10 năm."
+  },
+  {
+   "q": "Nét kiến trúc độc bản bao quanh khuôn viên Chùa Hương Ấp có niên đại Thế kỷ XVII - XIX (Mã định danh: HA-KT-02) được xây dựng bằng vật liệu gì?",
+   "options": [
+    "Tường bao gạch đá ong cổ đặc trưng vùng trung du",
+    "Đá xanh nguyên khối chạm rồng",
+    "Gạch vồ thời Mạc",
+    "Gỗ lim ghép bản"
+   ],
+   "correct": 0,
+   "citeCode": "HA-KT-02",
+   "gapTopic": "Kiến trúc di tích (HA-KT-02)",
+   "gapAdvice": "Theo học liệu mã HA-KT-02, tường bao quanh khuôn viên Chùa Hương Ấp được xây bằng gạch đá ong cổ (Thế kỷ XVII - XIX) mang vẻ đẹp rêu phong cổ kính độc bản."
+  },
+  {
+   "q": "Bức hoành phi cổ treo tại Nhà Tổ Chùa Hương Ấp (Mã định danh: HA-HP-18) khắc 4 chữ Hán nào để tưởng nhớ niên hiệu của vua Lý Nam Đế?",
+   "options": [
+    "Thiên Đức Lưu Quang",
+    "Vạn Cổ Anh Linh",
+    "Nam Đế Thánh Cung",
+    "Cổ Pháp Linh Từ"
+   ],
+   "correct": 0,
+   "citeCode": "HA-HP-18",
+   "gapTopic": "Hiện vật Mộc thư HA-HP-18",
+   "gapAdvice": "Hồ sơ hiện vật HA-HP-18 tại Nhà Tổ Chùa Hương Ấp là bức hoành phi 'Thiên Đức Lưu Quang' nhắc nhớ niên hiệu Thiên Đức (năm 544) của Hoàng đế Lý Nam Đế."
+  },
+  {
+   "q": "Trong bộ sưu tập di vật khảo cổ làng Cổ Pháp (Mã CP-RD-01 đến CP-BV-26), nhóm hiện vật nào chứng minh cư dân Việt cổ đã cư trú tại đây từ thời Tiền sử và thời kỳ Đông Sơn?",
+   "options": [
+    "15 rìu đá tiền sử (CP-RD-01..15) và 02 rìu đồng Đông Sơn (CP-RDG-16..17)",
+    "Chỉ có tiền đồng thời Đường",
+    "Bộ sưu tập 20 kiếm sắt thời Tây Sơn",
+    "Trống đồng Ngọc Lũ nguyên chiếc"
+   ],
+   "correct": 0,
+   "citeCode": "CP-RDG-16",
+   "gapTopic": "Các Hiện Vật Khảo Cổ - Di vật Cổ Pháp",
+   "gapAdvice": "Kho học liệu số lưu trữ 15 tiêu bản rìu đá tiền sử (CP-RD-01 đến CP-RD-15) và 02 tiêu bản rìu đồng Văn hóa Đông Sơn (CP-RDG-16, CP-RDG-17) do nhân dân làng Cổ Pháp sưu tầm."
+  },
+  {
+   "q": "Trên Bản đồ tương tác, bình nguyên nơi Lý Bí tập hợp trai tráng vùng Cổ Pháp luyện tập võ nghệ có tên là gì và tọa độ nào?",
+   "options": [
+    "Cánh Đồng Tráng (21.4160° B, 105.8940° Đ)",
+    "Đầm Dạ Trạch (20.8500° B, 106.0100° Đ)",
+    "Hồ Suối Lạnh (21.3800° B, 105.8200° Đ)",
+    "Đồi Pháo Thủ (21.5900° B, 105.8400° Đ)"
+   ],
+   "correct": 0,
+   "citeCode": "HA-TP-11",
+   "gapTopic": "Bản đồ tương tác (Điểm số 4 - Cánh Đồng Tráng)",
+   "gapAdvice": "Cánh Đồng Tráng nằm tại tọa độ 21.4160° B, 105.8940° Đ thuộc phường Vạn Xuân, TP. Phổ Yên."
+  }
+ ],
+ "comments": [
+  {
+   "author": "Hội đồng Tư vấn Sử học - Trường THCS Phổ Yên",
+   "time": "Đã thẩm định",
+   "text": "Danh mục Các Hiện Vật Khảo Cổ đã được chuẩn hóa đầy đủ 8 tiêu chí thông tin, kết hợp Kể chuyện lịch sử và Bảo tồn ký ức cộng đồng rất khoa học.",
+   "mediaType": null,
+   "mediaUrl": null
+  },
+  {
+   "author": "Cô Nguyễn Thị Mai - Giáo viên Lịch sử & Địa lý, Trường THCS Phổ Yên",
+   "time": "Thực nghiệm Lớp 7",
+   "text": "Phim hoạt hình, Truyện tranh số và Trò chơi trắc nghiệm trong mục Kể chuyện lịch sử giúp học sinh hào hứng tiếp thu kiến thức ngay tại lớp và thực địa.",
+   "mediaType": null,
+   "mediaUrl": null
+  },
+  {
+   "author": "Bác Ngô Văn Hòa - Nhân chứng cao niên làng Cổ Pháp, phường Vạn Xuân",
+   "time": "Đóng góp thực địa",
+   "text": "Rất mừng vì nhà trường đã mở Góc ký ức làng Cổ Pháp và Kho tư liệu đối chiếu xưa và nay để bà con nhân dân cùng đóng góp hình ảnh, tư liệu quý.",
+   "mediaType": "image",
+   "mediaUrl": "./assets/images/cophapmemories-cpm-03-mediaurl.jpg"
+  }
+ ],
+ "leaderboard": [
+  {
+   "name": "Nguyễn Minh Châu - Lớp 7A1, Trường THCS Phổ Yên",
+   "score": "60/60 điểm • Đã nộp Phiếu HA-VB-01",
+   "badge": "🏅 Xuất sắc"
+  },
+  {
+   "name": "Trần Hoàng Nam - Lớp 7A2, Trường THCS Phổ Yên",
+   "score": "50/60 điểm • Đã nộp Phiếu HA-KT-02",
+   "badge": "⭐ Tốt"
+  },
+  {
+   "name": "Lê Thu Hà - Lớp 9A1, Trường THCS Phổ Yên",
+   "score": "60/60 điểm • Đã nộp Phiếu CP-RDG-16",
+   "badge": "🏅 Xuất sắc"
+  }
+ ],
+ "expData": {
+  "preGood": 24.2,
+  "postGood": 68.3
+ }
+}

@@ -1,0 +1,158 @@
+:root {
+      --brand-primary: #0F4C81;
+      --brand-secondary: #0D9488;
+      --heritage-accent: #DC2626;
+      --gold-accent: #F59E0B;
+      --bg-bright: #F4F8FB;
+      --card-bg: #FFFFFF;
+      --text-main: #0F172A;
+    }
+
+    body {
+      font-family: 'Be Vietnam Pro', sans-serif;
+      background-color: var(--bg-bright);
+      color: var(--text-main);
+      font-size: 16px;
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    h1,
+    h2,
+    h3,
+    .font-serif-title {
+      font-family: 'Merriweather', serif;
+    }
+
+    .bright-academic-bg {
+      background-color: var(--bg-bright);
+      background-image:
+        radial-gradient(at 0% 0%, rgba(13, 148, 136, 0.08) 0px, transparent 45%),
+        radial-gradient(at 100% 15%, rgba(15, 76, 129, 0.08) 0px, transparent 50%),
+        radial-gradient(at 50% 100%, rgba(245, 158, 11, 0.06) 0px, transparent 50%);
+    }
+
+    .archive-card {
+      background: #FFFFFF;
+      border: 1px solid #E2E8F0;
+      box-shadow: 0 10px 25px -5px rgba(15, 76, 129, 0.07), 0 4px 10px -2px rgba(15, 76, 129, 0.04);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .archive-card-hover:hover {
+      transform: translateY(-5px);
+      border-color: var(--brand-secondary);
+      box-shadow: 0 20px 35px -8px rgba(13, 148, 136, 0.16);
+    }
+
+    @keyframes kenBurnsDynamic {
+      0% {
+        transform: scale(1) translate(0, 0);
+      }
+
+      50% {
+        transform: scale(1.07) translate(-1%, -0.5%);
+      }
+
+      100% {
+        transform: scale(1) translate(0, 0);
+      }
+    }
+
+    .hero-ken-burns {
+      animation: kenBurnsDynamic 16s ease-in-out infinite;
+    }
+
+    @keyframes fadeSlideUp {
+      from {
+        opacity: 0;
+        transform: translateY(14px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-view-in {
+      animation: fadeSlideUp 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    @keyframes relicCarouselScroll {
+      0% {
+        transform: translateX(0%);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .dynamic-carousel-track {
+      display: flex;
+      width: max-content;
+      animation: relicCarouselScroll 38s linear infinite;
+    }
+
+    .dynamic-carousel-track:hover {
+      animation-play-state: paused;
+    }
+
+    .ba-slider-wrap {
+      position: relative;
+      overflow: hidden;
+      user-select: none;
+      border-radius: 1.25rem;
+    }
+
+    .ba-Overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 50%;
+      overflow: hidden;
+      border-right: 4px solid #F59E0B;
+    }
+
+    @keyframes soundWave {
+
+      0%,
+      100% {
+        height: 6px;
+      }
+
+      50% {
+        height: 22px;
+      }
+    }
+
+    .wave-bar {
+      width: 4px;
+      background-color: #F59E0B;
+      border-radius: 999px;
+      display: inline-block;
+      animation: soundWave 0.85s ease-in-out infinite;
+    }
+
+    /* CHẾ ĐỘ SỬA TRỰC TIẾP ĐỀ MỤC NGAY TRÊN MÀN HÌNH */
+
+
+    ::-webkit-scrollbar {
+      width: 9px;
+      height: 9px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #F1F5F9;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #0F4C81;
+      border-radius: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #0D9488;
+    }
